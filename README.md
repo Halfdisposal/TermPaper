@@ -98,7 +98,7 @@ For $n$ copies, the error probability decays as:
 
 $$P_e^{(n)} \;\asymp\; e^{-n \xi_{QCB}}, \qquad \xi_{QCB} = -\ln \min_{s \in [0,1]} Q_s(\rho_0, \rho_1)$$
 
-$$Q_s(\rho_0, \rho_1) = \operatorname{Tr}\!\left[\rho_0^s\, \rho_1^{1-s}\right]$$
+$$Q_s(\rho_0, \rho_1) = \operatorname{Tr}\!\left[ \rho_0^s \, \rho_1^{1-s} \right]$$
 
 For two Gaussian states, $Q_s$ admits a closed-form expression in terms of their covariance matrices.
 
