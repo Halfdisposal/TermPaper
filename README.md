@@ -113,6 +113,7 @@ quantum-state-discrimination/
 │   ├── main.tex                  # Main LaTeX source
 │   ├── figures/                  # Generated plots (PDF/PNG)
 │   └── refs.bib                  # BibTeX references
+├── draft_paper.tex
 └── README.md
 ```
 
