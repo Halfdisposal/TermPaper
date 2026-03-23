@@ -1,5 +1,5 @@
 # READ THE GUIDELINES 
-guidelines.txt
+https://github.com/Halfdisposal/TermPaper/blob/main/guidelines.txt
 <div align="center">
 
 ```
