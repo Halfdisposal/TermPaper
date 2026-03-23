@@ -1,4 +1,5 @@
-# READ THE GUIDELINES
+# READ THE GUIDELINES 
+\url{https://github.com/Halfdisposal/TermPaper/blob/main/guidelines.txt}
 <div align="center">
 
 ```
