@@ -1,0 +1,2 @@
+Note:
+It is required to have the DATE in the COMMIT MESSAGES for the project files for proper management. Please adhere to the rule.
