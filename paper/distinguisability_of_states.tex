@@ -46,7 +46,10 @@ where $\mu_k$ are the real eigenvalues. Now expanding $\hat{E}_1$ in the same ba
 Hence,
 \begin{equation}
     \begin{split}
-        tr(\hat{E}_1\hat{\gamma}) = tr\left(\sum_{k,l} e_{kl} \ket{k}\bra{l} \cot \sum_m \mu_m \ket{m}\bra{m}\right)\\
-                                 &= 
+        tr(\hat{E}_1\hat{\gamma}) &= tr\left(\sum_{k,l} e_{kl} \ket{k}\bra{l} \cdot \sum_m \mu_m \ket{m}\bra{m}\right)\\
+                                  &= \sum_{klm} e_{kl} \mu_m \braket{l|m} \braket{m|k}\\
+                                  &= \sum_{klm} e_{kl} \mu_m \delta_{l,m} \delta_{m,k}\\
+                                  &= \sum_{k} e_{kk} \mu_k
     \end{split}
 \end{equation}
+Since POVMs are positive valued, so $e_{kk}$ is positive. Now, $\mu_k$ can be positive or negative, but since we are optimizing $e_{kk}$, if $\mu_k$ is negative, it will lead to negative propagation of the errors, thus for such cases $e_{kk}$ must be 0. Hence the net contribution will come only from the positive $e_{kk}$ values. Thus the optimal $\hat{E}_1$ is one that projects onto positive part of $\hat{\gamma}$, $\hat{\gamma}_+$ (say) which projects to the subspace by the eigenstates of $\hat{\gamma}$ with positive eigenvalues. 
