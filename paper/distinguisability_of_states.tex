@@ -1,3 +1,52 @@
 Although, the problem of distinguisability is defined for any number of states, let us start with the problem of distinguisability of two states, $\hat{\rho}_0$ and $\hat{\rho}_1$, with their corresponding equiprobable binary hypothesis $H_0$ and $H_1$ respectively. However, so far, we have only discussed more of the formalism, but nothing that could be used quantify the distinction between two states. In particular, we want something that can quantify some \textit{distance} between the two states or some kind of method to quantify some \textit{error} for distinction between two states given the measurement. For the notion of \textit{distance}, we use \textit{fidelity of states} and as discused in chapter 1, the \textit{Helstrom's Bound} can be viewed as a measure of the error which gives the minimum probability of error and the corresponding POVM that gives the minimum measurement errors.
 \subsubsection{Helstrom’s Optimal Discrimination}
 As discussed in chapter 1, Helstrom's Bounds corresponds to the generic optimization problem to find the POVM that gives the best measurement with minimum error probability. Given the two states, we consider a dichotomous POVM \{$\hat{E}_0, \hat{E}_1$\}, where $\hat{E}_0$ corresponds to the hypothesis $\hat{H}_0$ and $\hat{E}_1$ corresponds to the hypothesis $\hat{E}_1$ respectively.
+The error probability can simply be obtained from the hypothesis testing for $H_0$ and $H_1$ as 
+\begin{equation}
+    P_E = \frac{1}{2} (P(H_0|H_1) + P(H_1|H_0))
+    \label{eq:311a}
+\end{equation}
+where,\\
+$P(H_0|H_1)$ is the probability of concluding that $H_0$ is true, when $H_1$ is and\\
+$P(H_1|H_0)$ is the probability of concluding that $H_1$ is true, when $H_0$ is true and\\
+the factor of $\frac{1}{2}$ arises from the equiprobable assumptions.
+
+Also, note that the expectation of an operator $\hat{O}$ given the system is in state $\hat{\rho}$ is given by $\left<\hat{O}\right> = tr(\hat{rho}\hat{O})$.
+So, if the system is in $\hat{\rho}_j$ and we make a measurement with the operator with $\hat{E}_i$, then the probability of error in the measurement is given by
+\begin{equation}
+    P(H_i|H_j) = tr(\hat{\rho}_j \hat{E}_i)
+    \label{eq:311b}
+\end{equation}
+Thus, using eq~\ref{eq:311b} in eq~\ref{eq:311a}, we get
+\begin{equation}
+    P_E = \frac{1}{2} (tr(\hat{\rho}_1 \hat{E}_0) + tr(\hat{\rho}_0 \hat{E}_1))
+    \label{eq:311c}
+\end{equation}
+Also, since we defined our POVM to be the set {$\hat{E}_0, \hat{E}_1$} and POVM are complete, so $\hat{E}_0 + \hat{E}_1 = I \implies \hat{E}_0 = I - \hat{E}_1$.
+So, eq~\ref{eq:311c} will be,
+\begin{equation}
+    \begin{split}
+        P_E &= \frac{1}{2} (tr(\hat{\rho}_1 (I - \hat{E}_1)) + tr(\hat{\rho}_0 \hat{E}_1)) \\
+            &= \frac{1}{2} (tr(\hat{\rho}_1) - tr(\hat{\rho}_1 \hat{E}_1) + tr(\hat{\rho}_0 \hat{E}_1))\\
+            &= \frac{1}{2} (1 - tr(\hat{\rho}_1 \hat{E}_1) + tr(\hat{\rho}_0 \hat{E}_1)) , \text{since }tr(\hat{\rho}_i) = 1\\
+            &= \frac{1}{2} (1 - tr((\hat{\rho}_1 - \hat{\rho}_0) \hat{E}_1))
+    \end{split}
+    \label{eq:311d}
+\end{equation}
+Note, all we aim to is find the correct POVM set so that the error probability is minimum. For this case, as $\hat{E}_0 + \hat{E}_1 = I$, so, we can express $\hat{E}_0$ in terms of $\hat{E}_1$. Thus, we have to minimize $P_E$ over the measurement operator $\hat{E}_1$.
+Define $\hat{\gamma} = \hat{\rho} _ 1 - \hat{\rho}_0$. Clearly, $tr(\hat{\gamma}) = tr(\hat{\rho}_1) - tr(\hat{\rho}_0) = 1 - 1 = 0$. Since, both $\hat{\rho}_0$ and $\hat{\rho}_1$ are both positive and semi definite, so the eigenvalues of $\hat{\gamma}$ can be both positive or negative.
+Since both $\hat{\rho}_0$ and $\hat{\rho}_1$ are hermitian, so $\hat{\gamma}$ is also hermitian, hence it has the spectral decomposition,
+\begin{equation}
+    \hat{\gamma} = \sum_k \mu_k \ket{k}\bra{k}
+\end{equation}
+where $\mu_k$ are the real eigenvalues. Now expanding $\hat{E}_1$ in the same basis
+\begin{equation}
+    \hat{E}_1 = \sum_{k,l} e_{kl} \ket{k}\bra{l}
+\end{equation}
+Hence,
+\begin{equation}
+    \begin{split}
+        tr(\hat{E}_1\hat{\gamma}) = tr\left(\sum_{k,l} e_{kl} \ket{k}\bra{l} \cot \sum_m \mu_m \ket{m}\bra{m}\right)\\
+                                 &= 
+    \end{split}
+\end{equation}
