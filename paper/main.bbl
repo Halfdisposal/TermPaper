@@ -1,0 +1,52 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{mainref}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=43b98ce5557180f4a6f6d3f5a61a12aa}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Si\bibnamedelima Hui},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{43b98ce5557180f4a6f6d3f5a61a12aa}
+      \strng{fullhash}{43b98ce5557180f4a6f6d3f5a61a12aa}
+      \strng{fullhashraw}{43b98ce5557180f4a6f6d3f5a61a12aa}
+      \strng{bibnamehash}{43b98ce5557180f4a6f6d3f5a61a12aa}
+      \strng{authorbibnamehash}{43b98ce5557180f4a6f6d3f5a61a12aa}
+      \strng{authornamehash}{43b98ce5557180f4a6f6d3f5a61a12aa}
+      \strng{authorfullhash}{43b98ce5557180f4a6f6d3f5a61a12aa}
+      \strng{authorfullhashraw}{43b98ce5557180f4a6f6d3f5a61a12aa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MIT Doctoral Thesis}
+      \field{title}{Quantum State Discrimination with Bosonic Channels and Gaussian States}
+      \field{year}{2010}
+      \field{pages}{0--70}
+      \range{pages}{-1}
+      \warn{\item Range field 'pages' in entry 'mainref' is malformed, falling back to literal}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

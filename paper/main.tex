@@ -40,6 +40,15 @@
 \newtheorem{definition}{Definition}[section]
 \newtheorem{remark}{Remark}[section]
 
+% ─── Custom Environments ────────────────────────────────────────────────────
+\newenvironment{acknowledgements}{
+    \begin{center}
+        \textbf{Acknowledgements}
+    \end{center}
+    \small
+}{}
+
+
 % ─── Custom tcolorbox styles ─────────────────────────────────────────────────
 \tcbuselibrary{skins,breakable}
 
@@ -110,7 +119,7 @@
     {\large \textbf{Instructor}: Professor Sourin Das\\}
 
     {\large\color{mitred}\rule{0.5\linewidth}{2pt}\\[1em]}
-    {\large A Term Paper Review of Chapters 1--3\\[0.3em]
+    {\large A Term Paper Review of Chapters 1--3\cite{mainref}\\[0.3em]
     \textit{Based on the MIT Doctoral Thesis by Si Hui Tan (2010)}\\[2em]}
     \begin{table}[H]
         \centering
@@ -134,20 +143,32 @@
     \vspace{0.5cm}
 	{\large \textsc{INDIAN INSTITUTE OF SCIENCE EDUCATION AND RESEARCH, KOLKATA}\par}
     \newpage
+    \begin{acknowledgements}
+        [ACKNOWLEDGEMENT]
+    \end{acknowledgements}
+    \newpage
     \begin{abstract}
+        \centering
         \noindent
             [ABSTRACT]
     \end{abstract}
-
 \end{titlepage}
+
 
 
 \tableofcontents
 \newpage
 
 \section{Introduction}
+
+\section{Continuous Variable Quantum Information Theory}
+
+\section{State Discrimination Using Gaussian States}
     \subsection{Distinguisability Of States}
-        \subsubsection{Helstrom's Optimal Discrimination}
+    \input{distinguisability_of_states.tex}
+
+
+
 
 \printbibliography[heading=bibintoc,title={References}]
 
