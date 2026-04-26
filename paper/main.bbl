@@ -46,6 +46,63 @@
       \range{pages}{-1}
       \warn{\item Range field 'pages' in entry 'mainref' is malformed, falling back to literal}
     \endentry
+    \entry{chernoffref}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=9eb07060d8638c20478c4ed4f33d6cfc}{%
+           family={K.M.R.\bibnamedelimi Audenaert;\bibnamedelimb J.\bibnamedelimi Calsamiglia},
+           familyi={K\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={R.\bibnamedelimi Munoz-Tapia},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=342ee1ab789179a912950fb7f87ec7f4}{%
+           family={Verstraete},
+           familyi={V\bibinitperiod},
+           given={E.\bibnamedelimi Bagan;\bibnamedelimb Ll.\bibnamedelimi Masanes;\bibnamedelimb A.\bibnamedelimi Acin;\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{8ff3b3e156bdf89d932ad8bf51529c93}
+      \strng{fullhash}{8ff3b3e156bdf89d932ad8bf51529c93}
+      \strng{fullhashraw}{8ff3b3e156bdf89d932ad8bf51529c93}
+      \strng{bibnamehash}{8ff3b3e156bdf89d932ad8bf51529c93}
+      \strng{authorbibnamehash}{8ff3b3e156bdf89d932ad8bf51529c93}
+      \strng{authornamehash}{8ff3b3e156bdf89d932ad8bf51529c93}
+      \strng{authorfullhash}{8ff3b3e156bdf89d932ad8bf51529c93}
+      \strng{authorfullhashraw}{8ff3b3e156bdf89d932ad8bf51529c93}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett. 98, 160501 (2007)}
+      \field{title}{Discriminating States: The Quantum Chernoff Bound}
+      \field{year}{2007}
+    \endentry
+    \entry{pbcourse_chernoff}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=33c512a801f6604a8ccf9e8a4570a45e}{%
+           family={Pishro-Nik},
+           familyi={P\bibinithyphendelim N\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{33c512a801f6604a8ccf9e8a4570a45e}
+      \strng{fullhash}{33c512a801f6604a8ccf9e8a4570a45e}
+      \strng{fullhashraw}{33c512a801f6604a8ccf9e8a4570a45e}
+      \strng{bibnamehash}{33c512a801f6604a8ccf9e8a4570a45e}
+      \strng{authorbibnamehash}{33c512a801f6604a8ccf9e8a4570a45e}
+      \strng{authornamehash}{33c512a801f6604a8ccf9e8a4570a45e}
+      \strng{authorfullhash}{33c512a801f6604a8ccf9e8a4570a45e}
+      \strng{authorfullhashraw}{33c512a801f6604a8ccf9e8a4570a45e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Probability, Statistics, and Random Processes: Chernoff Bounds}
+      \verb{urlraw}
+      \verb https://www.probabilitycourse.com/chapter6/6_2_3_chernoff_bounds.php
+      \endverb
+      \verb{url}
+      \verb https://www.probabilitycourse.com/chapter6/6_2_3_chernoff_bounds.php
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
