@@ -1,0 +1,14 @@
+\subsubsection{Single Mode Gaussian States}
+For two single mode gaussian thermal states with mean 0 and covariance matrices $\sigma_1$ and $\sigma_2$ corresponding to states $\hat{\rho}_1$ and $\hat{\rho}_2$ is given by
+\begin{equation}
+    F_0(\hat{\rho}_1, \hat{\rho}_2) = \frac{2}{\sqrt{det(\sigma_1 + \sigma_2)} (\sqrt{det(\theta)}-\sqrt{det(\theta) - 1})}
+    \label{eq:321a}
+\end{equation}
+where,\\
+$det(\theta) = 1 + \frac{P}{det(\sigma_1 + \sigma_2)}$\\
+$P = (det(\sigma_1) - 1)(det(\sigma_2) - 1)$\\
+It was also derived in the paper, the fidelity for a two single mode displaced squeezed thermal states. By the Williamson's Theorem, it could be seen that any arbitrary single mode gaussian state can be expressed as a displaced squeezed thermal state, i.e. $\hat{\rho}_G = \hat{U}_S \hat{\rho}_{th} \hat{U}_S^{\dag}$. Thus, the fidelity for any single mode gaussian state,
+\begin{equation}
+    F(\hat{\rho}_1, \hat{\rho}_2) = F_0(\hat{\rho}_1, \hat{\rho}_2) exp\left(-\frac{1}{2}(\overline{R_1} - \overline{R_2})^T \kappa (\overline{R_1} - \overline{R_2})\right)
+\end{equation}
+where $F_0(\hat{\rho}_1, \hat{\rho}_2)$ is defined as eq~\ref{eq:321a}  and $\kappa = \mathbb{I} - (\Phi(\sigma_1) + \sigma_2)^{-1} (\sigma_2 + i \Omega)$

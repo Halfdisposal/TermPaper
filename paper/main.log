@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.26)  26 APR 2026 13:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.26)  26 APR 2026 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1266,7 +1266,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\bikas\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<figures/logo.png, id=39, 581.17125pt x 663.98062pt>
+<figures/logo.png, id=43, 581.17125pt x 663.98062pt>
 File: figures/logo.png Graphic file (type png)
 <use figures/logo.png>
 Package pdftex.def Info: figures/logo.png  used on input line 137.
@@ -1370,7 +1370,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[5])
+[5]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1379,7 +1379,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6]
+[6]) (fidelity_for_gaussian.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1388,7 +1388,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[7] (main.aux)
+[7])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
@@ -1397,8 +1406,14 @@ L3 programming layer <2024-12-25>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 11913C30C813400B3BA65524B5F1DA2A;1482.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: BD89CC47037BFD8016FB74A86EDD6C1C;1804
+(rerunfilecheck)             After:  921A5736E0F44F47217A99ADDF6DB6F8;1900.
 
 Package biblatex Warning: Please rerun LaTeX.
 
@@ -1407,13 +1422,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39628 strings out of 473536
- 775653 string characters out of 5714956
- 1639275 words of memory out of 5000000
- 62202 multiletter control sequences out of 15000+600000
- 570595 words of font info for 119 fonts, out of 8000000 for 9000
+ 39657 strings out of 473536
+ 776305 string characters out of 5714956
+ 1639297 words of memory out of 5000000
+ 62213 multiletter control sequences out of 15000+600000
+ 570862 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,18n,101p,1080b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,18n,101p,1080b,1287s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\bikas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/bikas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/bikas/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1430,14 +1445,15 @@ sfonts/cm/cmr12.pfb><C:/Users/bikas/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmr6.pfb><C:/Users/bikas/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bikas/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bikas/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/bikas/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/bikas/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/
-bikas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.
-pfb>
-Output written on main.pdf (10 pages, 363262 bytes).
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/bikas/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/bikas/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/b
+ikas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C
+:/Users/bikas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols
+/msbm10.pfb>
+Output written on main.pdf (11 pages, 387753 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 31314 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 246 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 31322 words of extra memory for PDF output out of 35830 (max. 10000000)
 

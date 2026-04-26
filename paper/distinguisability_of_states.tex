@@ -149,5 +149,24 @@ Combining eq~\ref{eq:312a} and eq~\ref{eq:312b} with eq~\ref{eq:311a}
 Notice this takes the same form as the quantum Chernoff Bounds upto a factor of $\frac{1}{2}$, where instead of the probability desity functions $p_0(x)$ and $p_1(x)$, we have the density matrices $\rho_0$ and $\rho_1$.
 
 
-One of the notable observation is that the Chernoff Bounds are exponentially tight. As the number of trails increases i.e. $N \rightarrow \infty$, 
+One of the notable observation is that the Chernoff Bounds are exponentially tight. As the number of trails increases i.e. $N \rightarrow \infty$, $ln(P_{N,E}^{min})/N \rightarrow -\kappa$
 
+Also, defining $Q_s = tr(\hat{\rho}_0^s \hat{\rho}_1^{1-s})$ and $Q = \text{min}_{0 \le s \le 1} Q_s$, the quantum Chernoff Bounds can be written as
+\begin{equation}
+    P_{QC}^N = \frac{1}{2}Q^N
+\end{equation}
+The aim to find the minimum error would require the minimization of $Q_s$ over all valures of $s \in [0, 1]$. Setting s = $\frac{1}{2}$, we will arrive at the \textit{Quantum Bhattacharyya Bound}, however this bound is not assymptotically tight as the Quantum Chernoff Bound.
+\begin{equation}
+    P_{B}^N = \frac{1}{2}\left(tr(\sqrt(\hat{\rho}_0 \hat{\rho}_1))\right)^N
+\end{equation}
+If the two states are indistinguisable, i.e. $\hat{\rho}_0 = \hat{\rho}_1$, then $P_{QC}^N \approx P_B^N$ and 
+$$\frac{1 - \sqrt{1 - F(\hat{\rho}_0, \hat{\rho}_1)}}{2} \le P^{(1)} \le P_{QC}^{(1)} \le \frac{\sqrt{F(\hat{\rho}_0, \hat{\rho}_1)}}{2}$$
+Also, it is noted that $Q_s$ is a convex function over s and joint-concave over $\hat{\rho}_0$ and $\hat{]rho}_1$. 
+$Q_s$ can be written as $$Q_s = tr(\hat{\rho}_0^s \hat{]rho}_1^{1 - s}) = \sum_k e_k^{(0)^s} e_k^{(1)^{1 - s}}$$
+where $e_k^{(0)}$ and $e_k^{(1)} \ge 0$
+Thus each element of $Q_s$ is $f_k(s) = a_k^s b_k^{1 - s} = e^{s ln{a_k}} e^{(1 - s) ln{b_k}}$, taking the 2nd derivative of $f_k$ w.r.t. s, we see $f_k^{''}(s) = (ln a_k - ln b_k)^s \cdot f_k(s) \ge 0$. Hence $Q_s$ is convex over s. 
+Also using Lieb's Theorem \cite{libstheorem}
+\begin{theorem}
+    Lieb's Theorem: Let K be a fixed matrix in $\mathbb{C}^{n\times m}$. Then for any $t \in [0, 1]$, the map $$(A, B) \rightarrow tr[K^* A^{1 - t} K B^t]$$ is jointly concave in (A, B) where A and B are respectively $n \times n$ and $m \times m$ Hermitian positive definite matrices.
+\end{theorem}
+Taking $A = \hat{\rho}_0$ and $B = \hat{\rho}_1$, and $K = \mathbb{I}$ and $t = s$, then $Q_s$ is concave over $\hat{\rho}_0$ and $\hat{\rho}_1$.
