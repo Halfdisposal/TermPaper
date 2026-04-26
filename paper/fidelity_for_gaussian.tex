@@ -12,3 +12,12 @@ It was also derived in the paper, the fidelity for a two single mode displaced s
     F(\hat{\rho}_1, \hat{\rho}_2) = F_0(\hat{\rho}_1, \hat{\rho}_2) exp\left(-\frac{1}{2}(\overline{R_1} - \overline{R_2})^T \kappa (\overline{R_1} - \overline{R_2})\right)
 \end{equation}
 where $F_0(\hat{\rho}_1, \hat{\rho}_2)$ is defined as eq~\ref{eq:321a}  and $\kappa = \mathbb{I} - (\Phi(\sigma_1) + \sigma_2)^{-1} (\sigma_2 + i \Omega)$
+
+\subsubsection{Multimode Gaussian States}
+For comparing two multi-mode gaussian states, the fidelity is defined as \cite{multimode}
+$$F(\hat{\rho}_1, \hat{\rho}_2) = \sqrt{L det(\Phi(\mathcal{O}))}$$
+where,\\
+$\Phi(A) = A(\mathbb{I} + \sqrt{\mathbb{I} + (J A)^{-1}})$\\
+$L^{-1} = det(\Phi(\sigma_1))^{-1} det(\frac{\Phi(\sigma_1) + \sigma_2}{2}) det(\frac{\sigma_2 + \Phi(\sigma_1) - U}{2})$\\
+$U = (\sigma_1 - i \Omega)(\Phi(\sigma_1) + \sigma_2)^{-1}(\sigma_2 + i \Omega)$\\
+$\mathcal{O} = \Phi(\sigma_1) - (\Phi(\sigma_1) - i\Omega) \left( \sigma_2 + \Phi(\sigma_1) - (\sigma_2 - i\Omega)(\Phi(\sigma_1) + \sigma_2)^{-1}(\sigma_2 + i\Omega) \right)^{-1} (\Phi(\sigma_1) + i\Omega)$
