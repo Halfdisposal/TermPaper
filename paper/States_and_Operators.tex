@@ -50,7 +50,7 @@ and this is large or small according as $\alpha$ is a large or small number.
 
 {But, no matter how small $\alpha$ may be (with the exception of $\alpha=0$), there is some non-zero probability $p(n)$ that any number of photons $n$, however large, is present in the field. In a certain sense the photon number is as random as possible in a coherent state, subject to a certain mean number $|\alpha|^{2}$. It is a remarkable feature of the combination of Fock states that the state is unchanged when acted on by the annihilation operator $\hat{a}$. A possible connection between the coherent state of the quantum field and a classical field is suggested by the fact that it is possible to absorb photons from an electromagnetic field in a coherent state repeatedly, without changing the state in any way.}
 
-{At first sight it might seem that, because the coherent state is not the eigenstate of any observable, it does not correspond to any readily measurable feature of the electromagnetic field. However, this is not so, because in practice most measurements of the field in the optical domain are based on the process of photoelectric detection. This includes instruments such as the photomultiplier, the photoconductor, the photographic plate and the eye. These instruments function by the absorption of photons, and it is therefore the absorption operator which is most closely associated with the measurement of the field. It is partly because the coherent states are eigenstates of the absorption operator, that these states prove to be particularly convenient for the description of many properties of the field encountered in photoelectric measurements.}
+{At first sight it might seem that, because the coherent state is not the eigenstate of any observable, it does not correspond to any readily measurable feature of the electromagnetic field. However, this is not so, because in practice most measurements of the field in the optical domain are based on the process of photoelectric detection. This includes instruments such as the photomultiplier, the photoconductor, the photographic plate and the eye. These instruments function by the absorption of photons, and it is therefore the absorption operator which is most closely associated with the measurement of the field. It is partly because the coherent states are eigenstates of the absorption operator, that these states prove to be particularly convenient for the description of many properties of the field encountered in photoelectric measurements.\cite[Chapter 11]{MandelWolf1995}
 
 \subsubsection{The coherent state as a displaced vacuum state - the displacement operator}
 
@@ -127,6 +127,167 @@ We repeat the process for $\hat{B} = \hat{a}^{\dagger}$. The first-order commuta
 
 Once again, the resulting c-number $\alpha^{*}$ causes all higher-order nested commutators ($[\hat{A},\alpha^{*}]$) to vanish. The expansion truncates cleanly, yielding:
 \begin{equation*} \hat{D}^{\dagger}(\alpha)\hat{a}^{\dagger}\hat{D}(\alpha) = e^{-\alpha\hat{a}^{\dagger}+\alpha^{*}\hat{a}}\hat{a}^{\dagger}e^{\alpha\hat{a}^{\dagger}-\alpha^{*}\hat{a}} = \hat{a}^{\dagger} + \alpha^{*} \end{equation*}
+\cite[Chapter 11]{MandelWolf1995}
+
+\subsection{Thermal States}
+
+\subsubsection{The Density Matrix}
+We begin with the fundamental postulate of statistical mechanics for a system in thermal equilibrium with a heat bath. The canonical ensemble defines the unnormalized density operator as $e^{-\beta\hat{H}}$, where $\beta = \frac{1}{k_B T}$ and $\hat{H}$ is the Hamiltonian. For a quantum harmonic oscillator, the Hamiltonian is $\hat{H} = \hbar\omega\left(\hat{a}^{\dagger}\hat{a} + \frac{1}{2}\right)$.
+
+To find the normalized density operator $\hat{\rho}_{th}$, we divide by the partition function $Z$:
+\begin{equation}
+    \hat{\rho}_{th} = \frac{1}{Z} e^{-\beta\hbar\omega\left(\hat{a}^{\dagger}\hat{a} + 1/2\right)}
+\end{equation}
+
+We evaluate the partition function $Z$ by taking the trace over the Fock state basis $|n\rangle$:
+\begin{align*}
+    Z &= \text{Tr}\left(e^{-\beta\hat{H}}\right) \nonumber \\
+      &= \sum_{n=0}^{\infty} \langle n| e^{-\beta\hbar\omega\left(\hat{a}^{\dagger}\hat{a} + 1/2\right)} |n\rangle \nonumber \\
+      &= e^{-\frac{\beta\hbar\omega}{2}} \sum_{n=0}^{\infty} e^{-\beta\hbar\omega n}
+\end{align*}
+
+Because $e^{-\beta\hbar\omega} < 1$, we recognize this as a convergent geometric series $\sum_{n=0}^\infty x^n = \frac{1}{1-x}$. Evaluating the series yields:
+\begin{equation*}
+    Z = e^{-\frac{\beta\hbar\omega}{2}} \left( \frac{1}{1 - e^{-\beta\hbar\omega}} \right)
+\end{equation*}
+
+Substituting $Z$ back into the density operator cancels the zero-point energy factor $e^{-\frac{\beta\hbar\omega}{2}}$:
+\begin{equation*}
+    \hat{\rho}_{th} = \left(1 - e^{-\beta\hbar\omega}\right) \sum_{n=0}^{\infty} e^{-\beta\hbar\omega n} |n\rangle\langle n|
+\end{equation*}
+
+We now translate this thermodynamic expression into the language of continuous variables by parameterizing it with the average photon number, $N = \langle\hat{a}^{\dagger}\hat{a}\rangle$. Applying Bose-Einstein statistics gives:
+\begin{equation*}
+    N = \frac{1}{e^{\beta\hbar\omega} - 1}
+\end{equation*}
+
+Rearranging this relation to solve for $e^{-\beta\hbar\omega}$ gives:
+\begin{align*}
+    e^{\beta\hbar\omega} &= \frac{N+1}{N} \nonumber \\
+    e^{-\beta\hbar\omega} &= \frac{N}{N+1}
+\end{align*}
+
+We also determine the normalization coefficient:
+\begin{equation*}
+    1 - e^{-\beta\hbar\omega} = 1 - \frac{N}{N+1} = \frac{1}{N+1}
+\end{equation*}
+
+Substituting these expressions back into the density operator yields the final density matrix in the Fock basis:
+\begin{equation}
+    \hat{\rho}_{th} = \frac{1}{N+1}\sum_{n=0}^{\infty}\left(\frac{N}{N+1}\right)^{n}|n\rangle\langle n|
+\end{equation}
+
+\subsubsection{The Mean Vector}
+The mean vector $\bar{R}$ consists of the expectation values of the quadrature operators, $\bar{R} = (\langle\hat{q}\rangle, \langle\hat{p}\rangle)^T$. We define the quadrature operators in terms of the creation and annihilation operators:
+\begin{equation*}
+    \hat{q} = \frac{1}{2}(\hat{a} + \hat{a}^{\dagger}), \quad \hat{p} = \frac{1}{2i}(\hat{a} - \hat{a}^{\dagger})
+\end{equation*}
+
+To compute $\langle\hat{q}\rangle$, we first evaluate the expectation values of $\hat{a}$ and $\hat{a}^{\dagger}$:
+\begin{equation*}
+    \langle\hat{a}\rangle = \text{Tr}(\hat{\rho}_{th}\hat{a}) = \sum_{n=0}^{\infty} \frac{1}{N+1}\left(\frac{N}{N+1}\right)^n \langle n|\hat{a}|n\rangle
+\end{equation*}
+
+Applying the annihilation operator yields $\hat{a}|n\rangle = \sqrt{n}|n-1\rangle$. Because Fock states are orthogonal, the inner product $\langle n | n-1 \rangle$ equals $0$. Consequently, $\langle\hat{a}\rangle = 0$. Identical logic proves $\langle\hat{a}^{\dagger}\rangle = 0$.
+
+Because both operator expectations vanish, the quadrature expectations also vanish:
+\begin{equation*}
+    \langle\hat{q}\rangle = 0, \quad \langle\hat{p}\rangle = 0
+\end{equation*}
+
+This gives the final mean vector:
+\begin{equation}
+    \bar{R} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} = 0
+\end{equation}
+
+\subsubsection{The Covariance Matrix}
+The elements of the covariance matrix $\sigma$ follow the definition:
+\begin{equation*}
+    \sigma_{ij} = \frac{1}{2}\langle\{\hat{R}_i, \hat{R}_j\}\rangle - \langle\hat{R}_i\rangle\langle\hat{R}_j\rangle
+\end{equation*}
+
+Because the mean vector $\bar{R}$ equals $0$, the second term drops out, leaving only the symmetric anti-commutator expectations.
+
+\textbf{Position Variance ($\sigma_{11}$)} \\
+We calculate $\langle\hat{q}^2\rangle$ by expanding the square of the position quadrature:
+\begin{equation*}
+    \hat{q}^2 = \frac{1}{4}\left(\hat{a} + \hat{a}^{\dagger}\right)^2 = \frac{1}{4}\left(\hat{a}^2 + (\hat{a}^{\dagger})^2 + \hat{a}\hat{a}^{\dagger} + \hat{a}^{\dagger}\hat{a}\right)
+\end{equation*}
+
+Using the canonical commutation relation $[\hat{a}, \hat{a}^{\dagger}] = 1$, we rewrite $\hat{a}\hat{a}^{\dagger} = \hat{a}^{\dagger}\hat{a} + 1$. This transforms the expression to:
+\begin{equation*}
+    \hat{q}^2 = \frac{1}{4}\left(\hat{a}^2 + (\hat{a}^{\dagger})^2 + 2\hat{a}^{\dagger}\hat{a} + 1\right)
+\end{equation*}
+
+Taking the expectation value, the diagonal nature of the thermal state ensures that $\langle\hat{a}^2\rangle = 0$ and $\langle(\hat{a}^{\dagger})^2\rangle = 0$. We substitute the known expectation $\langle\hat{a}^{\dagger}\hat{a}\rangle = N$ to find:
+\begin{equation*}
+    \sigma_{11} = \langle\hat{q}^2\rangle = \frac{1}{4}(2N + 1)
+\end{equation*}
+
+\textbf{Momentum Variance ($\sigma_{22}$)} \\
+We apply the same process to calculate $\langle\hat{p}^2\rangle$:
+\begin{align*}
+    \hat{p}^2 &= -\frac{1}{4}\left(\hat{a} - \hat{a}^{\dagger}\right)^2 \nonumber \\
+    &= -\frac{1}{4}\left(\hat{a}^2 + (\hat{a}^{\dagger})^2 - \hat{a}\hat{a}^{\dagger} - \hat{a}^{\dagger}\hat{a}\right) \nonumber \\
+    &= -\frac{1}{4}\left(\hat{a}^2 + (\hat{a}^{\dagger})^2 - 2\hat{a}^{\dagger}\hat{a} - 1\right)
+\end{align*}
+
+Taking the expectation value and eliminating the vanishing terms yields:
+\begin{equation*}
+    \sigma_{22} = \langle\hat{p}^2\rangle = -\frac{1}{4}(-2N - 1) = \frac{1}{4}(2N + 1)
+\end{equation*}
+
+\textbf{Cross-Terms ($\sigma_{12}$ and $\sigma_{21}$)} \\
+We evaluate the anti-commutator $\frac{1}{2}\langle\hat{q}\hat{p} + \hat{p}\hat{q}\rangle$:
+\begin{align*}
+    \hat{q}\hat{p} + \hat{p}\hat{q} &= \frac{1}{4i} \left[ (\hat{a}+\hat{a}^{\dagger})(\hat{a}-\hat{a}^{\dagger}) + (\hat{a}-\hat{a}^{\dagger})(\hat{a}+\hat{a}^{\dagger}) \right] \nonumber \\
+    &= \frac{1}{4i} \left[ (\hat{a}^2 - \hat{a}\hat{a}^{\dagger} + \hat{a}^{\dagger}\hat{a} - (\hat{a}^{\dagger})^2) + (\hat{a}^2 + \hat{a}\hat{a}^{\dagger} - \hat{a}^{\dagger}\hat{a} - (\hat{a}^{\dagger})^2) \right] \nonumber \\
+    &= \frac{1}{4i} \left[ 2\hat{a}^2 - 2(\hat{a}^{\dagger})^2 \right] \nonumber \\
+    &= \frac{1}{2i} \left( \hat{a}^2 - (\hat{a}^{\dagger})^2 \right)
+\end{align*}
+
+Because the expectation values of $\hat{a}^2$ and $(\hat{a}^{\dagger})^2$ are both zero, the cross-terms vanish: $\sigma_{12} = \sigma_{21} = 0$. 
+
+Assembling these components provides the complete covariance matrix:
+\begin{equation}
+    \sigma = \frac{1}{4}\begin{pmatrix} 2N+1 & 0 \\ 0 & 2N+1 \end{pmatrix}
+\end{equation}
+
+\subsubsection{The Wigner Function}
+Because the thermal state is a Gaussian state, we can construct its Wigner function entirely from its covariance matrix and mean vector. The standard mathematical definition of the Wigner function for a zero-mean Gaussian state is:
+\begin{equation*}
+    W(\mathbf{r}) = \frac{1}{2\pi \sqrt{\det \sigma}} \exp\left(-\frac{1}{2} \mathbf{r}^T \sigma^{-1} \mathbf{r}\right)
+\end{equation*}
+where $\mathbf{r} = (x, p)^T$.
+
+First, we calculate the determinant of the covariance matrix:
+\begin{equation*}
+    \det\sigma = \left(\frac{2N+1}{4}\right)^2
+\end{equation*}
+Taking the square root yields $\sqrt{\det\sigma} = \frac{2N+1}{4}$. 
+
+We use this to establish the normalization coefficient at the front of the Wigner function:
+\begin{equation*}
+    \frac{1}{2\pi \sqrt{\det \sigma}} = \frac{1}{2\pi \left(\frac{2N+1}{4}\right)} = \frac{2}{\pi(2N+1)}
+\end{equation*}
+
+Next, we invert the diagonal covariance matrix:
+\begin{equation*}
+    \sigma^{-1} = \frac{4}{2N+1}\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}
+\end{equation*}
+
+Finally, we compute the matrix multiplication inside the exponent:
+\begin{align*}
+    -\frac{1}{2} \mathbf{r}^T \sigma^{-1} \mathbf{r} &= -\frac{1}{2} \begin{pmatrix} x & p \end{pmatrix} \left[ \frac{4}{2N+1}\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \right] \begin{pmatrix} x \\ p \end{pmatrix} \nonumber \\
+    &= -\frac{2}{2N+1} (x^2 + p^2)
+\end{align*}
+
+Substituting the normalization coefficient and the expanded exponent into the general Gaussian formula produces the corrected Wigner function for the thermal state:
+\begin{equation}
+    W(x,p) = \frac{2}{\pi(2N+1)} \exp\left(-\frac{2}{2N+1}(x^2+p^2)\right)
+\end{equation}
+
+
 
 \subsection{Squeeze Operator}
 
@@ -764,3 +925,6 @@ Populating the full array with these evaluated elements yields the exact output 
 \begin{equation}
 \sigma_{EPR} = \frac{1}{4} \begin{pmatrix} \cosh 2r & 0 & \sinh 2r & 0 \\ 0 & \cosh 2r & 0 & -\sinh 2r \\ \sinh 2r & 0 & \cosh 2r & 0 \\ 0 & -\sinh 2r & 0 & \cosh 2r \end{pmatrix}
 \end{equation}
+
+
+
