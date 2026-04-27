@@ -160,7 +160,10 @@ The aim to find the minimum error would require the minimization of $Q_s$ over a
     P_{B}^N = \frac{1}{2}\left(tr(\sqrt(\hat{\rho}_0 \hat{\rho}_1))\right)^N
 \end{equation}
 If the two states are indistinguisable, i.e. $\hat{\rho}_0 = \hat{\rho}_1$, then $P_{QC}^N \approx P_B^N$ and 
-$$\frac{1 - \sqrt{1 - F(\hat{\rho}_0, \hat{\rho}_1)}}{2} \le P^{(1)} \le P_{QC}^{(1)} \le \frac{\sqrt{F(\hat{\rho}_0, \hat{\rho}_1)}}{2}$$
+\begin{equation}
+\frac{1 - \sqrt{1 - F(\hat{\rho}_0, \hat{\rho}_1)}}{2} \le P^{(1)} \le P_{QC}^{(1)} \le \frac{\sqrt{F(\hat{\rho}_0, \hat{\rho}_1)}}{2}
+\label{eq:ineq}
+\end{equation}
 Also, it is noted that $Q_s$ is a convex function over s and joint-concave over $\hat{\rho}_0$ and $\hat{]rho}_1$. 
 $Q_s$ can be written as $$Q_s = tr(\hat{\rho}_0^s \hat{]rho}_1^{1 - s}) = \sum_k e_k^{(0)^s} e_k^{(1)^{1 - s}}$$
 where $e_k^{(0)}$ and $e_k^{(1)} \ge 0$
