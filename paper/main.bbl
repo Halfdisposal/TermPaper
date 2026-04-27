@@ -46,6 +46,159 @@
       \range{pages}{-1}
       \warn{\item Range field 'pages' in entry 'mainref' is malformed, falling back to literal}
     \endentry
+    \entry{braunstein2005cv}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=728657c098db3e06cad549c0d94b5d51}{%
+           family={Braunstein},
+           familyi={B\bibinitperiod},
+           given={Samuel\bibnamedelima L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=b939e319515c9b9b73706a9df13b1c12}{%
+           family={Loock},
+           familyi={L\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{654783f89ac55ea27b38a1720b44b6d6}
+      \strng{fullhash}{654783f89ac55ea27b38a1720b44b6d6}
+      \strng{fullhashraw}{654783f89ac55ea27b38a1720b44b6d6}
+      \strng{bibnamehash}{654783f89ac55ea27b38a1720b44b6d6}
+      \strng{authorbibnamehash}{654783f89ac55ea27b38a1720b44b6d6}
+      \strng{authornamehash}{654783f89ac55ea27b38a1720b44b6d6}
+      \strng{authorfullhash}{654783f89ac55ea27b38a1720b44b6d6}
+      \strng{authorfullhashraw}{654783f89ac55ea27b38a1720b44b6d6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{number}{2}
+      \field{title}{Quantum information with continuous variables}
+      \field{volume}{77}
+      \field{year}{2005}
+      \field{pages}{513\bibrangedash 577}
+      \range{pages}{65}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.77.513
+      \endverb
+    \endentry
+    \entry{weedbrook2012gaussian}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=2adaf440c89e3d8a196dc4d6ecfa1f6d}{%
+           family={Weedbrook},
+           familyi={W\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f8da567e694d75b6df3397c7d995d984}{%
+           family={Pirandola},
+           familyi={P\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6cc05b5c09e3bf5d28ae9f0df991e5b7}{%
+           family={García-Patrón},
+           familyi={G\bibinithyphendelim P\bibinitperiod},
+           given={Raúl},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9a8548c6de11bbce4319932b05a198b4}{%
+           family={Cerf},
+           familyi={C\bibinitperiod},
+           given={Nicolas\bibnamedelima J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e22881c936d159ea2a72baf695d53877}{%
+           family={Ralph},
+           familyi={R\bibinitperiod},
+           given={Timothy\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=e3956c9de35f819eaf7f62045e16b636}{%
+           family={Shapiro},
+           familyi={S\bibinitperiod},
+           given={Jeffrey\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=501c0933970931f080455b29b43e560d}{%
+           family={Lloyd},
+           familyi={L\bibinitperiod},
+           given={Seth},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{1a54ac73d113f73505ba41d6785d0b6e}
+      \strng{fullhash}{5f43dd814cde0081d913501f87b499c5}
+      \strng{fullhashraw}{5f43dd814cde0081d913501f87b499c5}
+      \strng{bibnamehash}{1a54ac73d113f73505ba41d6785d0b6e}
+      \strng{authorbibnamehash}{1a54ac73d113f73505ba41d6785d0b6e}
+      \strng{authornamehash}{1a54ac73d113f73505ba41d6785d0b6e}
+      \strng{authorfullhash}{5f43dd814cde0081d913501f87b499c5}
+      \strng{authorfullhashraw}{5f43dd814cde0081d913501f87b499c5}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{number}{2}
+      \field{title}{Gaussian quantum information}
+      \field{volume}{84}
+      \field{year}{2012}
+      \field{pages}{621\bibrangedash 669}
+      \range{pages}{49}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.84.621
+      \endverb
+      \verb{eprint}
+      \verb 1110.3234
+      \endverb
+    \endentry
+    \entry{simon1994quantum}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d8e7cc56f6ff0f12e0a5d520c1a1c070}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e6e93cd5897d1348d4147b4fecabaed7}{%
+           family={Mukunda},
+           familyi={M\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=38f1f0adaef9d6eac4a5a23e21e6e81d}{%
+           family={Dutta},
+           familyi={D\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{dda30363121f6de6302d7dd7b64b096b}
+      \strng{fullhash}{dda30363121f6de6302d7dd7b64b096b}
+      \strng{fullhashraw}{dda30363121f6de6302d7dd7b64b096b}
+      \strng{bibnamehash}{dda30363121f6de6302d7dd7b64b096b}
+      \strng{authorbibnamehash}{dda30363121f6de6302d7dd7b64b096b}
+      \strng{authornamehash}{dda30363121f6de6302d7dd7b64b096b}
+      \strng{authorfullhash}{dda30363121f6de6302d7dd7b64b096b}
+      \strng{authorfullhashraw}{dda30363121f6de6302d7dd7b64b096b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review A}
+      \field{number}{3}
+      \field{title}{Quantum-noise matrix for multimode systems: U(n) invariance, squeezing, and normal forms}
+      \field{volume}{49}
+      \field{year}{1994}
+      \field{pages}{1567\bibrangedash 1583}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.49.1567
+      \endverb
+    \endentry
     \entry{chernoffref}{article}{}{}
       \name{author}{2}{}{%
         {{hash=9eb07060d8638c20478c4ed4f33d6cfc}{%
@@ -67,8 +220,8 @@
       \strng{authornamehash}{8ff3b3e156bdf89d932ad8bf51529c93}
       \strng{authorfullhash}{8ff3b3e156bdf89d932ad8bf51529c93}
       \strng{authorfullhashraw}{8ff3b3e156bdf89d932ad8bf51529c93}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett. 98, 160501 (2007)}
@@ -91,8 +244,8 @@
       \strng{authornamehash}{33c512a801f6604a8ccf9e8a4570a45e}
       \strng{authorfullhash}{33c512a801f6604a8ccf9e8a4570a45e}
       \strng{authorfullhashraw}{33c512a801f6604a8ccf9e8a4570a45e}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Introduction to Probability, Statistics, and Random Processes: Chernoff Bounds}
@@ -119,13 +272,66 @@
       \strng{authornamehash}{60e4e139faf65b09dc50a8f686c6742c}
       \strng{authorfullhash}{60e4e139faf65b09dc50a8f686c6742c}
       \strng{authorfullhashraw}{60e4e139faf65b09dc50a8f686c6742c}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv:1512.03401v3}
       \field{title}{Lieb’s concavity theorem, matrix geometric means, and semidefinite optimization}
       \field{year}{2020}
+    \endentry
+    \entry{multimode}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=dc057e96ef682d346e63e746c855b4b4}{%
+           family={Gh.-S.\bibnamedelimi Paraoanu},
+           familyi={G\bibinithyphendelim S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Horia\bibnamedelima Scutaru},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc057e96ef682d346e63e746c855b4b4}
+      \strng{fullhash}{dc057e96ef682d346e63e746c855b4b4}
+      \strng{fullhashraw}{dc057e96ef682d346e63e746c855b4b4}
+      \strng{bibnamehash}{dc057e96ef682d346e63e746c855b4b4}
+      \strng{authorbibnamehash}{dc057e96ef682d346e63e746c855b4b4}
+      \strng{authornamehash}{dc057e96ef682d346e63e746c855b4b4}
+      \strng{authorfullhash}{dc057e96ef682d346e63e746c855b4b4}
+      \strng{authorfullhashraw}{dc057e96ef682d346e63e746c855b4b4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PHYSICAL REVIEW A 61, 022306}
+      \field{title}{Fidelity for multimode thermal squeezed states}
+      \field{year}{2000}
+    \endentry
+    \entry{gaussian_states}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=f8da567e694d75b6df3397c7d995d984}{%
+           family={Pirandola},
+           familyi={P\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=501c0933970931f080455b29b43e560d}{%
+           family={Lloyd},
+           familyi={L\bibinitperiod},
+           given={Seth},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{22b99fa750e25ecfc744de37537a9ceb}
+      \strng{fullhash}{22b99fa750e25ecfc744de37537a9ceb}
+      \strng{fullhashraw}{22b99fa750e25ecfc744de37537a9ceb}
+      \strng{bibnamehash}{22b99fa750e25ecfc744de37537a9ceb}
+      \strng{authorbibnamehash}{22b99fa750e25ecfc744de37537a9ceb}
+      \strng{authornamehash}{22b99fa750e25ecfc744de37537a9ceb}
+      \strng{authorfullhash}{22b99fa750e25ecfc744de37537a9ceb}
+      \strng{authorfullhashraw}{22b99fa750e25ecfc744de37537a9ceb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PHYSICAL REVIEW A 78, 012331}
+      \field{title}{Computable bounds for the discrimination of Gaussian states}
+      \field{year}{2008}
     \endentry
   \enddatalist
 \endrefsection

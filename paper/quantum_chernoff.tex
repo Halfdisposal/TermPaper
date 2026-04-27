@@ -4,7 +4,7 @@ We know by Williamson's Theorem that every n-mode gaussian state $\rho$ can be s
 
 $$\rho = \hat{U}_{\bar{x}S} \rho_{th} \hat{U}_{\bar{x}S}^\dag$$
 
-where $\rho_{th} = \bigotimes_{k=1}^n \sigma{\nu_k}$ is the thermal state. Now, $\sigma(\nu_k) = \frac{2}{\nu_k + 1} \sum_{j = 0}^{\infty} \left(\frac{\nu_k - 1}{\nu_k + 1}\right)^j \ket{j} \bra{j}$. The covariance matrix is $V = S \left[\bigoplus_{k=1}^n \nu_k I_k\right]S^\dag$\cite{gaussian_states}[eq23, eq32]
+where $\rho_{th} = \bigotimes_{k=1}^n \sigma{\nu_k}$ is the thermal state. Now, $$\sigma(\nu_k) = \frac{2}{\nu_k + 1} \sum_{j = 0}^{\infty} \left(\frac{\nu_k - 1}{\nu_k + 1}\right)^j \ket{j} \bra{j}$$. The covariance matrix is $$V = S \left[\bigoplus_{k=1}^n \nu_k I_k\right]S^\dag$$\cite{gaussian_states}[eq23, eq32]
 
 Using \textit{Lemma 1} of \cite{gaussian_states}, $$\rho^p = tr(\rho^p) \rho(p)$$ where $tr(\rho^p) = \prod_{k=1}^n G_p(\nu_k) = \prod_{k=1}^n \frac{2^p}{(\nu_k + 1)^p - (\nu_k - 1)^p}$. \cite{gaussian_states}[eq30]
 
@@ -24,9 +24,12 @@ This is a standard integral. Solving we get,
 $$tr(\hat{\rho}_A, \hat{\rho}_B) \propto exp\left(-\frac{1}{2}(\vec{x}_A - \vec{x}_B)^T(V_A + V_B)^{-1} (\vec{x}_A - \vec{x}_B)\right)$$
 $$tr(\hat{\rho}_A, \hat{\rho}_B) \propto exp\left(-\frac{1}{2}\vec{d}^T(V_A + V_B)^{-1} \vec{d}\right)$$
 where $\vec{d} = \vec{x}_A - \vec{x}_B$
+
 Hence,
 $$Q_s = tr(\hat{\rho}_A^s \hat{\rho}_B^{1 - s}) \propto \prod_{k=1}^{n} G_s{\alpha_k} G_{1 - s}(\beta_k) exp\left(-\frac{1}{2}\vec{d}^T(V_A + V_B)^{-1} \vec{d}\right)$$
 $$Q_s = tr(\hat{\rho}_A^s \hat{\rho}_B^{1 - s}) = \bar{Q}_s exp\left(-\frac{1}{2}\vec{d}^T(V_A + V_B)^{-1} \vec{d}\right)$$
+
+
 It can further be calculated to find the value of $\bar{Q_s}$ as 
 $$\bar{Q}_s = \frac{2^n \prod_{k=1}^{n} G_s(\alpha_k) G_{1-s}(\beta_k)}{\sqrt{\det\left(V_A(s) + V_B(1-s)\right)}}$$
 where,
