@@ -1,13 +1,5 @@
-\documentclass[12pt]{article}
-\usepackage{amsmath}      % Essential math environments
-\usepackage{amssymb}      % Standard math symbols
-\usepackage{mathtools}    % Extends amsmath with useful fixes
-\usepackage{geometry}     % Clean page margins
-\geometry{margin=1in}
-\usepackage{hyperref}     % Optional: improves PDF navigation
 
-\begin{document}
-\section*{Coherent States}
+\section{Coherent States}
 
 \subsection*{Fock representation of the coherent state}
 
@@ -94,16 +86,17 @@ and
 
 The displacement operator also has the following property:
 
-{flagged)Unitary transformation of $\hat{a}$ or $\hat{a}^{\dagger}$ leads to the complex displacement $\alpha$ or $\alpha^{*}$, respectively. Thus
+\textbf{Unitary transformation of $\hat{a}$ or $\hat{a}^{\dagger}$ leads to the complex displacement $\alpha$ or $\alpha^{*}$, respectively. Thus
 \[ \hat{D}^{\dagger}(\alpha)\hat{a}\hat{D}(\alpha)=\hat{a}+\alpha \]
 and
-\[ \hat{D}^{\dagger}(\alpha)\hat{a}^{\dagger}\hat{D}(\alpha)=\hat{a}^{\dagger}+\alpha^{*}. \]
+\[ \hat{D}^{\dagger}(\alpha)\hat{a}^{\dagger}\hat{D}(\alpha)=\hat{a}^{\dagger}+\alpha^{*}. \] }
 
-These properties follow immediately by use of the operator expansion theorem, when we observe that the commutators
+\textbf{These properties follow immediately by use of the operator expansion theorem, when we observe that the commutators
 \[ [-\alpha\hat{a}^{\dagger}+\alpha^{*}\hat{a},\hat{a}]=\alpha \]
 \[ [-\alpha\hat{a}^{\dagger}+\alpha^{*}\hat{a},\hat{a}^{\dagger}]=\alpha^{*} \]
 reduce to c-numbers. We then have
 \[ e^{-\alpha\hat{a}^{\dagger}+\alpha^{*}\hat{a}}\hat{a}e^{\alpha\hat{a}^{\dagger}-\alpha^{*}\hat{a}}=\hat{a}+\alpha. \]
+}
 
 \section{Squeeze Operator}
 
@@ -370,7 +363,7 @@ which is also a consequent result of our ansatz based approach.
 \newpage
 
 
-\section*{Derivation of the Wigner Function for the Squeezed Vacuum State}
+\section{Derivation of the Wigner Function for the Squeezed Vacuum State}
 
 This derivation approaches the Wigner function $W(x,p)$ of the squeezed vacuum state by first determining its position wavefunction, and then applying the Fourier transform definition of the Wigner function.
 
@@ -574,8 +567,9 @@ From the normalization step for M, we can directly substitute and arrive at the 
 \end{equation*}
 
 \newpage
+\section{Creating Gaussian EPR states}
 
-\section*{Preliminary Properties for Usage}
+\subsection*{Preliminary Properties for Usage}
 
 Our aim here is to evaluate the expectation values of the mode operators for the squeezed vacuum state $|\xi\rangle = \hat{S}(\xi)|0\rangle$. We shall be relying on the known evolutions: $\hat{S}^\dagger \hat{a} \hat{S} = \mu\hat{a} + \nu\hat{a}^\dagger$ and $\hat{S}^\dagger \hat{a}^\dagger \hat{S} = \mu\hat{a}^\dagger + \nu^*\hat{a}$, where $\mu = \cosh r$ and $\nu = e^{i\theta}\sinh r$. 
 
@@ -772,6 +766,4 @@ Populating the full array with these evaluated elements yields the exact output 
 
 
 
-
-\end{document}
 
