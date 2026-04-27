@@ -1,0 +1,175 @@
+Although, the problem of distinguisability is defined for any number of states, let us start with the problem of distinguisability of two states, $\hat{\rho}_0$ and $\hat{\rho}_1$, with their corresponding equiprobable binary hypothesis $H_0$ and $H_1$ respectively. However, so far, we have only discussed more of the formalism, but nothing that could be used quantify the distinction between two states. In particular, we want something that can quantify some \textit{distance} between the two states or some kind of method to quantify some \textit{error} for distinction between two states given the measurement. For the notion of \textit{distance}, we use \textit{fidelity of states} and as discused in chapter 1, the \textit{Helstrom's Bound} can be viewed as a measure of the error which gives the minimum probability of error and the corresponding POVM that gives the minimum measurement errors.
+
+\subsubsection{Helstrom’s Optimal Discrimination}
+As discussed in chapter 1, Helstrom's Bounds corresponds to the generic optimization problem to find the POVM that gives the best measurement with minimum error probability. Given the two states, we consider a dichotomous POVM \{$\hat{E}_0, \hat{E}_1$\}, where $\hat{E}_0$ corresponds to the hypothesis $\hat{H}_0$ and $\hat{E}_1$ corresponds to the hypothesis $\hat{E}_1$ respectively.
+The error probability can simply be obtained from the hypothesis testing for $H_0$ and $H_1$ as 
+\begin{equation}
+    P_E = \frac{1}{2} (P(H_0|H_1) + P(H_1|H_0))
+    \label{eq:311a}
+\end{equation}
+where,\\
+$P(H_0|H_1)$ is the probability of concluding that $H_0$ is true, when $H_1$ is and\\
+$P(H_1|H_0)$ is the probability of concluding that $H_1$ is true, when $H_0$ is true and\\
+the factor of $\frac{1}{2}$ arises from the equiprobable assumptions.
+
+Also, note that the expectation of an operator $\hat{O}$ given the system is in state $\hat{\rho}$ is given by $\left<\hat{O}\right> = tr(\hat{rho}\hat{O})$.
+So, if the system is in $\hat{\rho}_j$ and we make a measurement with the operator with $\hat{E}_i$, then the probability of error in the measurement is given by
+\begin{equation}
+    P(H_i|H_j) = tr(\hat{\rho}_j \hat{E}_i)
+    \label{eq:311b}
+\end{equation}
+Thus, using eq~\ref{eq:311b} in eq~\ref{eq:311a}, we get
+\begin{equation}
+    P_E = \frac{1}{2} (tr(\hat{\rho}_1 \hat{E}_0) + tr(\hat{\rho}_0 \hat{E}_1))
+    \label{eq:311c}
+\end{equation}
+Also, since we defined our POVM to be the set {$\hat{E}_0, \hat{E}_1$} and POVM are complete, so $\hat{E}_0 + \hat{E}_1 = I \implies \hat{E}_0 = I - \hat{E}_1$.
+So, eq~\ref{eq:311c} will be,
+\begin{equation}
+    \begin{split}
+        P_E &= \frac{1}{2} (tr(\hat{\rho}_1 (I - \hat{E}_1)) + tr(\hat{\rho}_0 \hat{E}_1)) \\
+            &= \frac{1}{2} (tr(\hat{\rho}_1) - tr(\hat{\rho}_1 \hat{E}_1) + tr(\hat{\rho}_0 \hat{E}_1))\\
+            &= \frac{1}{2} (1 - tr(\hat{\rho}_1 \hat{E}_1) + tr(\hat{\rho}_0 \hat{E}_1)) , \text{since }tr(\hat{\rho}_i) = 1\\
+            &= \frac{1}{2} (1 - tr((\hat{\rho}_1 - \hat{\rho}_0) \hat{E}_1))
+    \end{split}
+    \label{eq:311d}
+\end{equation}
+Note, all we aim to is find the correct POVM set so that the error probability is minimum. For this case, as $\hat{E}_0 + \hat{E}_1 = I$, so, we can express $\hat{E}_0$ in terms of $\hat{E}_1$. Thus, we have to minimize $P_E$ over the measurement operator $\hat{E}_1$.
+Define $\hat{\gamma} = \hat{\rho} _ 1 - \hat{\rho}_0$. Clearly, $tr(\hat{\gamma}) = tr(\hat{\rho}_1) - tr(\hat{\rho}_0) = 1 - 1 = 0$. Since, both $\hat{\rho}_0$ and $\hat{\rho}_1$ are both positive and semi definite, so the eigenvalues of $\hat{\gamma}$ can be both positive or negative.
+Since both $\hat{\rho}_0$ and $\hat{\rho}_1$ are hermitian, so $\hat{\gamma}$ is also hermitian, hence it has the spectral decomposition,
+\begin{equation}
+    \hat{\gamma} = \sum_k \mu_k \ket{k}\bra{k}
+\end{equation}
+where $\mu_k$ are the real eigenvalues. Now expanding $\hat{E}_1$ in the same basis
+\begin{equation}
+    \hat{E}_1 = \sum_{k,l} e_{kl} \ket{k}\bra{l}
+\end{equation}
+Hence,
+\begin{equation}
+    \begin{split}
+        tr(\hat{E}_1\hat{\gamma}) &= tr\left(\sum_{k,l} e_{kl} \ket{k}\bra{l} \cdot \sum_m \mu_m \ket{m}\bra{m}\right)\\
+                                  &= \sum_{klm} e_{kl} \mu_m \braket{l|m} \braket{m|k}\\
+                                  &= \sum_{klm} e_{kl} \mu_m \delta_{l,m} \delta_{m,k}\\
+                                  &= \sum_{k} e_{kk} \mu_k
+    \end{split}
+\end{equation}
+Since POVMs are positive valued, so $e_{kk}$ is positive. Now, $\mu_k$ can be positive or negative, but since we are optimizing $e_{kk}$, if $\mu_k$ is negative, it will lead to negative propagation of the errors, thus for such cases $e_{kk}$ must be 0. Hence the net contribution will come only from the positive $e_{kk}$ values. Thus the optimal $\hat{E}_1$ is one that projects onto positive part of $\hat{\gamma}$, $\hat{\gamma}_+$ (say) which projects to the subspace by the eigenstates of $\hat{\gamma}$ with positive eigenvalues. 
+Thus, we have $tr(\hat{\gamma} \hat{E}_1) = tr(\hat{\gamma}_+) = \frac{1}{2}||\hat{\gamma}||_1$ where $||\hat{\gamma}||_1 = tr(|\hat{\gamma}|) = tr(\sqrt{\gamma^{\dag}\gamma})$. Thus, using this, eq~\ref{eq:311d} can be written as 
+\begin{equation}
+    P_E^{min} = \frac{1}{2}(1 - ||\hat{\rho}_1 - \hat{\rho}_0||_1)
+\end{equation}
+However, the calculation of the minimum probability of error using the above hypothesis is only for a single particle system with two states. But, the same analysis and calculations for an N particle system would be very difficult. This is because as the number of particles in the system increases the Hilbert Space grows exponentially over N as the N copy density matrix resides in the tensor product state of dimension $d^N$, where d is the dimension (degrees of freedom) for a single particle state, which may not simplify for larger N values. Moreover, opimization of such $d^N$ matrix set (POVM) would also be analytically as well as numerically very difficult. However, one can calculate the \textit{Quantum Chernoff Bounds}, which gives the asymptotic dependency of N copys of the system on the probability of error. Then the quantum hypothesis test becomes
+\begin{equation}
+    \begin{split}
+        H_0: \hat{\rho}_0 \otimes ... \otimes \hat{\rho}_0\\
+        H_1: \hat{\rho}_1 \otimes ... \otimes \hat{\rho}_1
+    \end{split}
+\end{equation}
+Thus for this case, the minimum probability of error is given by
+\begin{equation}
+    P_{E, N}^{min} = \frac{1}{2} (1 - ||\hat{\gamma}_N||_1)
+    \label{eq:311e}
+\end{equation}
+
+where $\hat{\gamma}_N = \hat{\rho}_1 \otimes ... \otimes \hat{\rho}_1 - \hat{\rho}_0 \otimes ... \otimes \hat{\rho}_0$
+
+\subsubsection{Fidelity}
+Fidelity between two states could be used as a notion of measure of the \textit{distance} between two states. For two states, $\hat{\rho}_1$ and $\hat{\rho}_2$, fidelity is defined as,
+\begin{equation}
+    F(\hat{\rho}_1, \hat{\rho}_2) = \left(tr\left(\sqrt{\sqrt{\hat{\rho}_1} \hat{\rho}_2 \sqrt{\hat{\rho}_1}} \right)\right)^2
+\end{equation}
+The properties of the above fidelity equation to be used as a viable measure of distance between two states are:
+\begin{itemize}
+    \item F($\hat{\rho}_1$, $\hat{\rho}_2$) $\le$ 1
+    \item F($\hat{\rho}_1$, $\hat{\rho}_2$) = F($\hat{\rho}_2$, $\hat{\rho}_1$)
+    \item If $\hat{\rho}_1$ is a pure state, $\hat{\rho}_1 = \ket{\psi_1}\bra{\psi_1}$, then F($\hat{\rho}_1$, $\hat{\rho}_2$) = $\braket{\psi_1|\hat{\rho}_2|\psi_1}$
+    \item F($\hat{\rho}_1$, $\hat{\rho}_2$) is invariant under unitary transformations on the state space.
+    \item F($\hat{\rho}_1 \otimes \hat{\sigma}_1$, $\hat{\rho}_2 \otimes \hat{\sigma}_2$) = F($\hat{\rho}_1$, $\hat{\rho}_2$) F($\hat{\sigma}_1$, $\hat{\sigma}_2$)
+\end{itemize}
+
+\subsubsection{Quantum Chernoff Bounds}
+So far, we have discussed how the error is quantified and methods of quantifying the error. But, how is the actual minimization of the errror probability occurs. Chernoff solved this problem in the asymptotic regime and gave the asymptotic dependence on the probability of error if we have N copies of the system, i.e. a N trail hypothesis testing.\cite{chernoffref} He showed that the probability of error decreases exponentially with the number of tests performed N, i.e. $P_E \approx exp(-\kappa N)$. The optimal exponent $\kappa$ arising in the asymptotic limit is called Chernoff Bounds\cite{chernoffref}. But why is Chernoff Bounds even considered... This may go back to 'One of the virtues of the Chernoff bound is that it yields a very natural distance measure between probability distributions; it is essentially the unique distance measure in the ubiquitous situation of independent and identically distributed (i.i.d.) random variables.'\cite{chernoffref}
+
+The quantum chernoff bounds serves as the upper limit the the minimum probability of error ~\ref{eq:311e}, i.e.
+\begin{equation}
+    P_{N,E}^{min} \le P_{QC}^N = \frac{1}{2}exp(-\kappa N)
+\end{equation}
+where $\kappa = -ln\left(\text{min }_{0\le s \le 1} tr(\hat{\rho}_0^s \hat{\rho}_1^{(1 - s)})\right)$
+
+Before diving deep into the quantum chernoff bounds, let us discuss a bit of the classical chernoff bounds. Consider a random variable X and $a \in \mathbb{R}$.
+Then, \cite{pbcourse_chernoff}
+\begin{equation}
+    \begin{split}
+        P(X \ge a) \le min_{s > 0} e^{-sa} M_X(s) \\
+        P(X \le a) \le min_{s < 0} e^{-sa} M_X(s)
+    \end{split}
+\end{equation}
+
+For the optimal decision, we define the log likelihood,
+$$L(x) = log\frac{p_1(x)}{p_0(x)}$$
+For N trial observations $$X = \sum_{i=1}^N L(x_i) = \sum_{i=1}^N log\frac{p_1(x_i)}{p_0(x_i)}$$
+where we declare $H_1$ is true if X > 0 else we declare $H_0$ is true.
+Now we refer to the eq~\ref{eq:311a}, which using above under hypothesis $H_1$
+$$P(H_0 | H_1) = P(X \le 0 | H_1) \le e^{-s \cdot 0} M_X(s) = M_X(s)$$
+where $s < 0$
+The moment generating function $M_X(s)$ is defined as $\braket{e^{sX}}$, Hence 
+\begin{equation}
+    \begin{split}
+        M_X(s) = \braket{e^{sX}} = \braket{e^{s\sum_{i=1}^N log\frac{p_1(x_i)}{p_0(x_i)}}}\\
+        M_X(s) = \braket{e^{\sum_{i=1}^N log\frac{p_1(x_i)}{p_0(x_i)}^s}}\\
+        M_X(s) = \braket{\prod_{i=1}^N e^{log\frac{p_1(x_i)}{p_0(x_i)}^s}}\\
+        M_X(s) = \prod_{i=1}^N \braket{\frac{p_1(x_i)}{p_0(x_i)}^s}
+    \end{split}
+\end{equation}
+Since, each factor is identical and $\braket{f} = \sum_{x_i} p(x) f(x)$ so,
+\begin{equation}
+    M_X(s) = \left(\sum_{x} p_1(x) \left(\frac{p_1(x)}{p_0(x)}\right)^s\right)^N = \left(\sum_{x} p_1(x)^{1 + s} p_0(x)^{-s}\right)^N
+\end{equation}
+Taking $s \rightarrow -s$, i.e. $s > 0$
+\begin{equation}
+    M_X(s) = \left(\sum_{x} p_1(x)^{1 - s} p_0(x)^s\right)^N
+\end{equation}
+
+\begin{equation}
+    P(H_0 | H_1) \le \left(\sum_{x} p_1(x)^{1 - s} p_0(x)^s\right)^N
+    \label{eq:312a}
+\end{equation}
+
+Similarly for $P(H_1 | H_0)$, we get
+\begin{equation}
+    P(H_1 | H_0) \le \left(\sum_{x} p_1(x)^{1 - s} p_0(x)^s\right)^N
+    \label{eq:312b}
+\end{equation}
+where $s > 0$
+Combining eq~\ref{eq:312a} and eq~\ref{eq:312b} with eq~\ref{eq:311a}
+\begin{equation}
+    P_E^{N} \le \left(\sum_{x} p_1(x)^{1 - s} p_0(x)^s\right)^N
+    \label{eq:312c}
+\end{equation}
+Notice this takes the same form as the quantum Chernoff Bounds upto a factor of $\frac{1}{2}$, where instead of the probability desity functions $p_0(x)$ and $p_1(x)$, we have the density matrices $\rho_0$ and $\rho_1$.
+
+
+One of the notable observation is that the Chernoff Bounds are exponentially tight. As the number of trails increases i.e. $N \rightarrow \infty$, $ln(P_{N,E}^{min})/N \rightarrow -\kappa$
+
+Also, defining $Q_s = tr(\hat{\rho}_0^s \hat{\rho}_1^{1-s})$ and $Q = \text{min}_{0 \le s \le 1} Q_s$, the quantum Chernoff Bounds can be written as
+\begin{equation}
+    P_{QC}^N = \frac{1}{2}Q^N
+\end{equation}
+The aim to find the minimum error would require the minimization of $Q_s$ over all valures of $s \in [0, 1]$. Setting s = $\frac{1}{2}$, we will arrive at the \textit{Quantum Bhattacharyya Bound}, however this bound is not assymptotically tight as the Quantum Chernoff Bound.
+\begin{equation}
+    P_{B}^N = \frac{1}{2}\left(tr(\sqrt(\hat{\rho}_0 \hat{\rho}_1))\right)^N
+\end{equation}
+If the two states are indistinguisable, i.e. $\hat{\rho}_0 = \hat{\rho}_1$, then $P_{QC}^N \approx P_B^N$ and 
+\begin{equation}
+\frac{1 - \sqrt{1 - F(\hat{\rho}_0, \hat{\rho}_1)}}{2} \le P^{(1)} \le P_{QC}^{(1)} \le \frac{\sqrt{F(\hat{\rho}_0, \hat{\rho}_1)}}{2}
+\label{eq:ineq}
+\end{equation}
+Also, it is noted that $Q_s$ is a convex function over s and joint-concave over $\hat{\rho}_0$ and $\hat{]rho}_1$. 
+$Q_s$ can be written as $$Q_s = tr(\hat{\rho}_0^s \hat{]rho}_1^{1 - s}) = \sum_k e_k^{(0)^s} e_k^{(1)^{1 - s}}$$
+where $e_k^{(0)}$ and $e_k^{(1)} \ge 0$
+Thus each element of $Q_s$ is $f_k(s) = a_k^s b_k^{1 - s} = e^{s ln{a_k}} e^{(1 - s) ln{b_k}}$, taking the 2nd derivative of $f_k$ w.r.t. s, we see $f_k^{''}(s) = (ln a_k - ln b_k)^s \cdot f_k(s) \ge 0$. Hence $Q_s$ is convex over s. 
+Also using Lieb's Theorem \cite{libstheorem}
+\begin{theorem}
+    Lieb's Theorem: Let K be a fixed matrix in $\mathbb{C}^{n\times m}$. Then for any $t \in [0, 1]$, the map $$(A, B) \rightarrow tr[K^* A^{1 - t} K B^t]$$ is jointly concave in (A, B) where A and B are respectively $n \times n$ and $m \times m$ Hermitian positive definite matrices.
+\end{theorem}
+Taking $A = \hat{\rho}_0$ and $B = \hat{\rho}_1$, and $K = \mathbb{I}$ and $t = s$, then $Q_s$ is concave over $\hat{\rho}_0$ and $\hat{\rho}_1$.

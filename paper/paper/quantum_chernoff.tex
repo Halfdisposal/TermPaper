@@ -1,0 +1,40 @@
+Consider two n-mode Gaussian states, viz $\hat{\rho}_A$ and $\hat{\rho}_B$ with symplectic decomposition matrix $S_A$ and $S_B$ respectively, with symplectic eigenvalues \{$\alpha_k, k = 1, ..., n$\} and \{$\beta_k, k = 1, ..., n$\} respectively. The mean in the phase space are $\bar{x_A}$ and $\bar{x_B}$ respectively.
+
+We know by Williamson's Theorem that every n-mode gaussian state $\rho$ can be specified by a displacement vector $\bar{x} \in \mathcal{R}^{2n}$, a symplectic matrix S that preserves $\Omega$ and the symplectic eigenvalues ${\nu_k, k = 1,...,n}$, where $\nu_k \ge 1$ and via the dicomposition
+
+$$\rho = \hat{U}_{\bar{x}S} \rho_{th} \hat{U}_{\bar{x}S}^\dag$$
+
+where $\rho_{th} = \bigotimes_{k=1}^n \sigma{\nu_k}$ is the thermal state. Now, $$\sigma(\nu_k) = \frac{2}{\nu_k + 1} \sum_{j = 0}^{\infty} \left(\frac{\nu_k - 1}{\nu_k + 1}\right)^j \ket{j} \bra{j}$$. The covariance matrix is $$V = S \left[\bigoplus_{k=1}^n \nu_k I_k\right]S^\dag$$\cite{gaussian_states}[eq23, eq32]
+
+Using \textit{Lemma 1} of \cite{gaussian_states}, $$\rho^p = tr(\rho^p) \rho(p)$$ where $tr(\rho^p) = \prod_{k=1}^n G_p(\nu_k) = \prod_{k=1}^n \frac{2^p}{(\nu_k + 1)^p - (\nu_k - 1)^p}$. \cite{gaussian_states}[eq30]
+
+Then,
+\begin{equation}
+    Q_s = tr(\hat{\rho}_A^s \hat{\rho}_B^{1 - s}) = \prod_{k=1}^{n} G_s{\alpha_k} G_{1 - s}(\beta_k) tr(\hat{\rho}_A(s) \hat{\rho}_B(1 - s))
+\end{equation}
+with covariance matrices $V_A(s)$ and $V_B(1 - s)$.
+
+Also, from chapter 2 we have $$tr(\hat{O}_1, \hat{O}_2) = \int_{\mathbb{C}^n} \frac{d^{2n}\vec{\lambda}}{\pi^n} \chi[\hat{O}_1](\vec{\lambda})\chi[\hat{O}_2](-\vec{\lambda})$$
+Using the characteristics function for the gaussian state $\chi(\vec{\lambda}) = exp(-\frac{1}{2}\vec{\lambda}^T \sigma \vec{\lambda} + i\vec{\lambda}^T \bar{R})$ we get,
+
+\begin{equation}
+    tr(\hat{\rho}_A, \hat{\rho}_B) = \int_{\mathbb{C}^n} \frac{d^{2n}\vec{\lambda}}{\pi^n} exp\left(-\frac{1}{2}\vec{\lambda}^T(V_A + V_B) \vec{\lambda} + i (\bar{x}_A - \bar{x}_B) \vec{\lambda}\right)
+\end{equation}
+This is a standard integral. Solving we get,
+$$tr(\hat{\rho}_A, \hat{\rho}_B) \propto exp\left(-\frac{1}{2}(\vec{x}_A - \vec{x}_B)^T(V_A + V_B)^{-1} (\vec{x}_A - \vec{x}_B)\right)$$
+$$tr(\hat{\rho}_A, \hat{\rho}_B) \propto exp\left(-\frac{1}{2}\vec{d}^T(V_A + V_B)^{-1} \vec{d}\right)$$
+where $\vec{d} = \vec{x}_A - \vec{x}_B$
+
+Hence,
+$$Q_s = tr(\hat{\rho}_A^s \hat{\rho}_B^{1 - s}) \propto \prod_{k=1}^{n} G_s{\alpha_k} G_{1 - s}(\beta_k) exp\left(-\frac{1}{2}\vec{d}^T(V_A + V_B)^{-1} \vec{d}\right)$$
+$$Q_s = tr(\hat{\rho}_A^s \hat{\rho}_B^{1 - s}) = \bar{Q}_s exp\left(-\frac{1}{2}\vec{d}^T(V_A + V_B)^{-1} \vec{d}\right)$$
+
+
+It can further be calculated to find the value of $\bar{Q_s}$ as 
+$$\bar{Q}_s = \frac{2^n \prod_{k=1}^{n} G_s(\alpha_k) G_{1-s}(\beta_k)}{\sqrt{\det\left(V_A(s) + V_B(1-s)\right)}}$$
+where,
+$$V_A(s) = S_A \left( \bigotimes_{k=1}^{n} \Lambda_s(\alpha_k) \mathbb{I}_k \right) S_A^T$$
+$$V_B(1-s) = S_B \left( \bigotimes_{k=1}^{n} \Lambda_{1-s}(\beta_k) \mathbb{I}_k \right) S_B^T$$
+$$G_p(x) = \frac{2^p}{(x+1)^p - (x-1)^p}$$
+$$\Lambda_p(x) = \frac{(x+1)^p + (x-1)^p}{(x+1)^p - (x-1)^p}$$
+The above implementation can be used numerically to calculate the quantum Chernoff Bounds. However, the analytical solution, for most cases would be difficult because the minimization over s, which is required would be difficult for most physical systems due to the scale of the physical systems.

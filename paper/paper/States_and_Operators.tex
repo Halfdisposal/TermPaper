@@ -1,0 +1,766 @@
+\subsection{Coherent States}
+
+\subsubsection{Fock representation of the coherent state}
+
+
+Assume that the annihilation operator $\hat{a}$ has a right eigenstate. Because $\hat{a}$ is not Hermitian, its eigenvalue will in general be some complex number $\alpha$, and we label the corresponding eigenstate $|\alpha\rangle$ by the same complex number $\alpha$. We may therefore write the equation
+\begin{equation*} \hat{a}|\alpha\rangle=\alpha|\alpha\rangle. \end{equation*}
+
+The conjugate state $\langle\alpha|$ is obviously a left eigenstate of the creation operator $\hat{a}^{\dagger}$, as can be seen by taking the Hermitian conjugate.
+\begin{equation*} \langle\alpha|\hat{a}^{\dagger}=\alpha^{*}\langle\alpha|. \end{equation*}
+
+The state $|\alpha\rangle$ will be called the coherent state. Our initial goal is to find an explicit representation for $|\alpha\rangle$ in the basis of Fock states $|n\rangle$ labelled by the occupation number $n$. Since the Fock states form a complete set, we may use them to represent $|\alpha\rangle$ in the form
+\begin{equation*} |\alpha\rangle=\sum_{n=0}^{\infty}c_{n}|n\rangle, \end{equation*}
+in which the $c_{n}$ are complex numbers to be determined. On substituting the expansion and using the "step down" equation, we obtain
+\begin{equation*} \sum_{n=1}^{\infty}c_{n}\sqrt{n}|n-1\rangle=\alpha\sum_{n=0}^{\infty}c_{n}|n\rangle. \end{equation*}
+
+As the $|n\rangle$ $(n=0,1,2,...)$ are a set of orthogonal state vectors, this equation is satisfied only if the coefficients of corresponding Fock state vectors on both sides are equal. We therefore have, on equating coefficients of $|n-1\rangle$,
+\begin{equation*} c_{n}=\frac{\alpha}{\sqrt{n}}c_{n-1}. \end{equation*}
+
+This is a recursion formula connecting $c_{n}$ and $c_{n-1}$ from which we obtain by repeated application
+\begin{equation*} c_{n}=\frac{\alpha^{2}}{[n(n-1)]^{1/2}}c_{n-2}=...=\frac{\alpha^{n}}{\sqrt{n!}}c_{0}, \end{equation*}
+so that
+\begin{equation*} |\alpha\rangle=c_{0}\sum_{n=0}^{\infty}\frac{\alpha^{n}}{\sqrt{n!}}|n\rangle. \end{equation*}
+
+$c_{0}$ can be determined from the requirement that the state $|\alpha\rangle$ be normalized to unity, which implies
+\begin{align*}
+\langle\alpha|\alpha\rangle &= 1=|c_{0}|^{2}\sum_{n=0}^{\infty}\sum_{m=0}^{\infty}\frac{\alpha^{*n}\alpha^{m}}{\sqrt{n!}\sqrt{m!}}\langle n|m\rangle \\
+&= |c_{0}|^{2}\sum_{n=0}^{\infty}\frac{|\alpha|^{2n}}{n!} \\
+&= |c_{0}|^{2}e^{|\alpha|^{2}},
+\end{align*}
+when we make use of the orthogonality of the Fock states. Hence
+\begin{equation*} |c_{0}|=e^{-|\alpha|^{2}/2}, \end{equation*}
+and, apart from a unimodular factor, we have
+\begin{equation}
+    |\alpha\rangle=e^{-|\alpha|^{2}/2}\sum_{n=0}^{\infty}\frac{\alpha^{n}}{\sqrt{n!}}|n\rangle, 
+\end{equation}
+and
+\begin{equation*} \langle\alpha|=e^{-|\alpha|^{2}/2}\sum_{n=0}^{\infty}\frac{\alpha^{*n}}{\sqrt{n!}}\langle n|. \end{equation*}
+
+It is interesting to note that for every complex number $\alpha$, other than zero, the coherent state $|\alpha\rangle$ has a non-zero projection on every Fock state $|n\rangle$. Thus
+\begin{equation*} \langle n|\alpha\rangle=e^{-|\alpha|^{2}/2}\frac{\alpha^{n}}{\sqrt{n!}}. \end{equation*}
+
+When $\alpha=0$, the coherent state $|\alpha\rangle$ becomes the vacuum state $|vac\rangle$, which may be regarded as either a coherent state or a Fock state. The squared modulus of the projection of $|\alpha\rangle$ onto $|n\rangle$ gives the probability $p(n)$ that $n$ excitations or photons will be found in the coherent state $|\alpha\rangle$. We therefore have
+\begin{equation} p(n)=|\langle n|\alpha\rangle|^{2}=\frac{|\alpha|^{2n}}{n!}e^{-|\alpha|^{2}}, \end{equation}
+which will be recognized as a Poisson distribution in $n$, with parameter $|\alpha|^{2}$. The mean number of photons present when the state is a coherent state $|\alpha\rangle$ is therefore given by(Poisson distbn - mean is the $\lambda$ of the distbn. - here  $|\alpha|^{2}$ ).
+\begin{equation}
+\sum_{n=0}^{\infty}np(n)=|\alpha|^{2}=\langle\alpha|\hat{a}^{\dagger}\hat{a}|\alpha\rangle 
+\end{equation}
+and this is large or small according as $\alpha$ is a large or small number.
+
+{But, no matter how small $\alpha$ may be (with the exception of $\alpha=0$), there is some non-zero probability $p(n)$ that any number of photons $n$, however large, is present in the field. In a certain sense the photon number is as random as possible in a coherent state, subject to a certain mean number $|\alpha|^{2}$. It is a remarkable feature of the combination of Fock states that the state is unchanged when acted on by the annihilation operator $\hat{a}$. A possible connection between the coherent state of the quantum field and a classical field is suggested by the fact that it is possible to absorb photons from an electromagnetic field in a coherent state repeatedly, without changing the state in any way.}
+
+{At first sight it might seem that, because the coherent state is not the eigenstate of any observable, it does not correspond to any readily measurable feature of the electromagnetic field. However, this is not so, because in practice most measurements of the field in the optical domain are based on the process of photoelectric detection. This includes instruments such as the photomultiplier, the photoconductor, the photographic plate and the eye. These instruments function by the absorption of photons, and it is therefore the absorption operator which is most closely associated with the measurement of the field. It is partly because the coherent states are eigenstates of the absorption operator, that these states prove to be particularly convenient for the description of many properties of the field encountered in photoelectric measurements.}
+
+\subsubsection{The coherent state as a displaced vacuum state - the displacement operator}
+
+By combining the expansion with the representation of the Fock state $|n\rangle = \frac{\hat{a}^{\dagger n}}{\sqrt{n!}}| vac\rangle$, we can write
+\begin{align*}
+|\alpha\rangle &= e^{-|\alpha|^{2}/2}\sum_{n=0}^{\infty}\frac{\alpha^{n}\hat{a}^{\dagger n}}{n!}|vac\rangle \\
+&= e^{-|\alpha|^{2}/2}e^{\alpha\hat{a}^{\dagger}}|vac\rangle,
+\end{align*}
+which shows that the coherent state $|\alpha\rangle$ may also be regarded as a displaced vacuum state .
+
+We can re-express this in a somewhat more symmetric form, by inserting the operator $e^{-\alpha^{*}\hat{a}}$ between $e^{\alpha\hat{a}^{\dagger}}$ and $|vac\rangle$. Thus
+
+    
+
+
+\begin{equation} |\alpha\rangle=e^{-|\alpha|^{2}/2}e^{\alpha\hat{a}^{\dagger}}e^{-\alpha^{*}\hat{a}}|vac\rangle. \end{equation}
+
+
+
+The insertion of $e^{-\alpha^{*}\hat{a}}$ can be justified by expansion of the exponential operator, which leads to the result
+\begin{align*}
+e^{-\alpha^{*}\hat{a}}|vac\rangle &= \left[1-\alpha^{*}\hat{a}+\frac{(\alpha^{*}\hat{a})^{2}}{2!}-...\right]|vac\rangle \\
+&= |vac\rangle.
+\end{align*}
+
+We now make use of the Campbell-Baker-Hausdorff operator identity for two operators $\hat{A}$, $\hat{B}$ provided that
+\begin{equation*} \exp(\hat{A}+\hat{B})=\exp\hat{A}\exp\hat{B}\exp(-[\hat{A},\hat{B}]/2), \end{equation*}
+\begin{equation*} [\hat{A},[\hat{A},\hat{B}]]=0=[\hat{B},[\hat{A},\hat{B}]]. \end{equation*}
+
+The condition is obviously satisfied for any pair of operators $\hat{A}$, $\hat{B}$ whose commutator $[\hat{A}, \hat{B}]$ is a c-number. If we now put $\hat{A}=\alpha\hat{a}^{\dagger}$, $\hat{B}=-\alpha^{*}\hat{a}$ and make use of the commutation relation, we obtain $[\hat{A},\hat{B}]=|\alpha|^{2}$ and
+\begin{equation*} e^{\alpha\hat{a}^{\dagger}-\alpha^{*}\hat{a}}=e^{\alpha\hat{a}^{\dagger}}e^{-\alpha^{*}\hat{a}}e^{-|\alpha|^{2}/2} \end{equation*}
+which allows us to re-write the equation in the more compact form
+\begin{equation} |\alpha\rangle=\hat{D}(\alpha)|0\rangle \label{eq:displacementoperator}, \end{equation}
+where
+\begin{equation*} \hat{D}(\alpha)\equiv e^{\alpha\hat{a}^{\dagger}-\alpha^{*}\hat{a}}. \end{equation*}
+
+$\hat{D}(\alpha)$ is the displacement operator that creates the coherent state $|\alpha\rangle$ from the vacuum state $|0\rangle=|vac\rangle$. It is clear by inspection that $\hat{D}(\alpha)$ is a unitary operator such that
+\begin{equation*} \hat{D}^{\dagger}(\alpha)\hat{D}(\alpha)=1=\hat{D}(\alpha)\hat{D}^{\dagger}(\alpha), \end{equation*}
+and
+\begin{equation*} \hat{D}^{\dagger}(\alpha)=\hat{D}(-\alpha). \end{equation*}
+
+
+The displacement operator also has the following property:
+
+{Unitary transformation of $\hat{a}$ or $\hat{a}^{\dagger}$ leads to the complex displacement $\alpha$ or $\alpha^{*}$, respectively. Thus
+\begin{equation*} \hat{D}^{\dagger}(\alpha)\hat{a}\hat{D}(\alpha)=\hat{a}+\alpha \end{equation*}
+and
+\begin{equation*} \hat{D}^{\dagger}(\alpha)\hat{a}^{\dagger}\hat{D}(\alpha)=\hat{a}^{\dagger}+\alpha^{*}. \end{equation*} }
+
+{These properties follow by applying the operator expansion theorem (the Hadamard lemma), which states that for any operators $\hat{A}$ and $\hat{B}$:}
+\begin{equation*} e^{\hat{A}}\hat{B}e^{-\hat{A}} = \hat{B} + [\hat{A},\hat{B}] + \frac{1}{2!}[\hat{A},[\hat{A},\hat{B}]] + \dots \end{equation*}
+
+{Letting the displacement operator be $\hat{D}(\alpha) = e^{\alpha\hat{a}^{\dagger}-\alpha^{*}\hat{a}}$, its adjoint is $\hat{D}^{\dagger}(\alpha) = e^{-\alpha\hat{a}^{\dagger}+\alpha^{*}\hat{a}}$. To map this to the theorem, we set $\hat{A} = -\alpha\hat{a}^{\dagger}+\alpha^{*}\hat{a}$. First, we evaluate the transformation of $\hat{B} = \hat{a}$. Using the fundamental commutation relations $[\hat{a},\hat{a}^{\dagger}]=1$ and $[\hat{a}^{\dagger},\hat{a}]=-1$, we compute the first-order commutator:}
+\begin{align*}
+[\hat{A},\hat{a}] &= [-\alpha\hat{a}^{\dagger}+\alpha^{*}\hat{a}, \hat{a}] \\
+&= -\alpha[\hat{a}^{\dagger},\hat{a}] + \alpha^{*}[\hat{a},\hat{a}] \\
+&= -\alpha(-1) + 0 \\
+&= \alpha
+\end{align*}
+
+{Because $\alpha$ is a c-number (scalar), it commutes with all operators. Therefore, all higher-order nested commutators strictly vanish:}
+\begin{equation*} [\hat{A},[\hat{A},\hat{a}]] = [\hat{A},\alpha] = 0 \end{equation*}
+
+{Substituting these terms back into the expansion theorem, the infinite series truncates exactly after the second term:}
+\begin{equation*} \hat{D}^{\dagger}(\alpha)\hat{a}\hat{D}(\alpha) = e^{-\alpha\hat{a}^{\dagger}+\alpha^{*}\hat{a}}\hat{a}e^{\alpha\hat{a}^{\dagger}-\alpha^{*}\hat{a}} = \hat{a} + \alpha \end{equation*}
+
+We repeat the process for $\hat{B} = \hat{a}^{\dagger}$. The first-order commutator evaluates to:
+\begin{align*}
+[\hat{A},\hat{a}^{\dagger}] &= [-\alpha\hat{a}^{\dagger}+\alpha^{*}\hat{a}, \hat{a}^{\dagger}] \\
+&= -\alpha[\hat{a}^{\dagger},\hat{a}^{\dagger}] + \alpha^{*}[\hat{a},\hat{a}^{\dagger}] \\
+&= 0 + \alpha^{*}(1) \\
+&= \alpha^{*}
+\end{align*}
+
+Once again, the resulting c-number $\alpha^{*}$ causes all higher-order nested commutators ($[\hat{A},\alpha^{*}]$) to vanish. The expansion truncates cleanly, yielding:
+\begin{equation*} \hat{D}^{\dagger}(\alpha)\hat{a}^{\dagger}\hat{D}(\alpha) = e^{-\alpha\hat{a}^{\dagger}+\alpha^{*}\hat{a}}\hat{a}^{\dagger}e^{\alpha\hat{a}^{\dagger}-\alpha^{*}\hat{a}} = \hat{a}^{\dagger} + \alpha^{*} \end{equation*}
+
+\subsection{Squeeze Operator}
+
+\subsubsection{The unitary squeeze operator}
+
+It is possible to generate a squeezed single-mode state from an unsqueezed one by the action of the following simple unitary operator,
+
+\begin{equation*}
+\hat{S}(\xi)=\exp\frac{1}{2}(\xi^{*}\hat{a}^{ 2}-\xi\hat{a}^{\dagger 2}), \quad \xi=r e^{i\theta},
+\end{equation*}
+
+which is known as the squeeze operator.
+
+To find the mode evolution of the annihilation operator $\hat{a}$ under the single-mode squeezing operator $\hat{S}(\xi)$, we apply the Baker-Campbell-Hausdorff (BCH) Lemma.
+
+\subsubsection{Defining the Operators}
+The squeezing operator for a single boson is defined using the squeezing parameter $\xi$:
+\begin{equation}
+\hat{S}(\xi) = \exp\left(\frac{1}{2}\xi^*\hat{a}^2 - \frac{1}{2}\xi(\hat{a}^\dagger)^2\right)
+\end{equation}
+This squeezing parameter $\xi$ is complex and can be expressed as $\xi = r e^{i\theta}$, a value determined by the squeezing amplitude $r$ and the squeezing angle $\theta$.
+
+Let the exponent be the operator $\hat{G}$, meaning $\hat{S}(\xi) = \exp(\hat{G})$:
+\begin{equation*}
+\hat{G} = \frac{1}{2}\xi^*\hat{a}^2 - \frac{1}{2}\xi(\hat{a}^\dagger)^2
+\end{equation*}
+Because $\hat{G}$ is an anti-Hermitian operator ($\hat{G}^\dagger = -\hat{G}$), the adjoint of the squeezing operator is $\hat{S}(\xi)^\dagger = \exp(-\hat{G})$. The full transformation we need to calculate is therefore:
+\begin{equation*}
+\hat{S}(\xi)^\dagger \hat{a} \hat{S}(\xi) = \exp(-\hat{G}) \hat{a} \exp(\hat{G})
+\end{equation*}
+
+\subsubsection{Applying the Baker-Campbell-Hausdorff Lemma}
+For generic operators $\hat{A}$ and $\hat{B}$, the BCH lemma states:
+\begin{equation*}
+e^{\hat{A}} \hat{B} e^{-\hat{A}} = \hat{B} + [\hat{A}, \hat{B}] + \frac{1}{2!}[\hat{A}, [\hat{A}, \hat{B}]] + \frac{1}{3!}[\hat{A}, [\hat{A}, [\hat{A}, \hat{B}]]] + \dots
+\end{equation*}
+Substituting $\hat{A} = -\hat{G}$ and $\hat{B} = \hat{a}$, the formula generates an alternating series of nested commutators:
+\begin{equation*}
+e^{-\hat{G}} \hat{a} e^{\hat{G}} = \hat{a} - [\hat{G}, \hat{a}] + \frac{1}{2!}[\hat{G}, [\hat{G}, \hat{a}]] - \frac{1}{3!}[\hat{G}, [\hat{G}, [\hat{G}, \hat{a}]]] + \dots
+\end{equation*}
+
+\subsubsection{Calculating the Nested Commutators}
+We systematically calculate these individual commutators using the canonical commutation relation $[\hat{a}, \hat{a}^\dagger] = 1$.
+
+\textbf{First Commutator:}
+\begin{align*}
+[\hat{G}, \hat{a}] &= \left[ \frac{1}{2}\xi^*\hat{a}^2 - \frac{1}{2}\xi(\hat{a}^\dagger)^2, \hat{a} \right] \\
+&= -\frac{1}{2}\xi [(\hat{a}^\dagger)^2, \hat{a}] + \frac{1}{2}\xi^* [\hat{a}^2, \hat{a}]
+\end{align*}
+Because any operator commutes with itself, $[\hat{a}^2, \hat{a}] = 0$. Using the identity $[\hat{A}\hat{B}, \hat{C}] = \hat{A}[\hat{B}, \hat{C}] + [\hat{A}, \hat{C}]\hat{B}$, we expand the remaining term:
+\begin{align*}
+[(\hat{a}^\dagger)^2, \hat{a}] &= \hat{a}^\dagger[\hat{a}^\dagger, \hat{a}] + [\hat{a}^\dagger, \hat{a}]\hat{a}^\dagger \\
+&= \hat{a}^\dagger(-1) + (-1)\hat{a}^\dagger = -2\hat{a}^\dagger
+\end{align*}
+Substituting this result back yields:
+\begin{equation*}
+[\hat{G}, \hat{a}] = -\frac{1}{2}\xi(-2\hat{a}^\dagger) = \xi\hat{a}^\dagger
+\end{equation*}
+
+\textbf{Second Commutator:}
+\begin{align*}
+[\hat{G}, [\hat{G}, \hat{a}]] &= [\hat{G}, \xi\hat{a}^\dagger] = \xi[\hat{G}, \hat{a}^\dagger] \\
+[\hat{G}, \hat{a}^\dagger] &= \left[ \frac{1}{2}\xi^*\hat{a}^2 - \frac{1}{2}\xi(\hat{a}^\dagger)^2, \hat{a}^\dagger \right] = \frac{1}{2}\xi^*[\hat{a}^2, \hat{a}^\dagger]
+\end{align*}
+Expanding $[\hat{a}^2, \hat{a}^\dagger]$:
+\begin{equation*}
+[\hat{a}^2, \hat{a}^\dagger] = \hat{a}[\hat{a}, \hat{a}^\dagger] + [\hat{a}, \hat{a}^\dagger]\hat{a} = \hat{a}(1) + (1)\hat{a} = 2\hat{a}
+\end{equation*}
+Evaluating the full bracket gives:
+\begin{equation*}
+[\hat{G}, \hat{a}^\dagger] = \frac{1}{2}\xi^*(2\hat{a}) = \xi^*\hat{a}
+\end{equation*}
+Returning to the nested commutator:
+\begin{equation*}
+[\hat{G}, [\hat{G}, \hat{a}]] = \xi(\xi^*\hat{a}) = |\xi|^2\hat{a} = r^2\hat{a}
+\end{equation*}
+
+\textbf{Higher-Order Commutators:}
+The pattern predictably scales by $r^2$ with each cycle:
+\begin{align*}
+[\hat{G}, [\hat{G}, [\hat{G}, \hat{a}]]] &= [\hat{G}, r^2\hat{a}] = r^2[\hat{G}, \hat{a}] = r^2\xi\hat{a}^\dagger \\
+[\hat{G}, [\hat{G}, [\hat{G}, [\hat{G}, \hat{a}]]]] &= [\hat{G}, r^2\xi\hat{a}^\dagger] = r^2\xi[\hat{G}, \hat{a}^\dagger] = r^4\hat{a}
+\end{align*}
+
+\subsubsection{Summing the BCH Series}
+Substituting these evaluated commutators back into the original expansion:
+\begin{equation*}
+\hat{S}^\dagger(\xi) \hat{a} \hat{S}(\xi) = \hat{a} - (\xi\hat{a}^\dagger) + \frac{1}{2!}(r^2\hat{a}) - \frac{1}{3!}(r^2\xi\hat{a}^\dagger) + \frac{1}{4!}(r^4\hat{a}) - \dots
+\end{equation*}
+Collecting terms containing $\hat{a}$ and $\hat{a}^\dagger$:
+\begin{equation*}
+\hat{S}^\dagger(\xi) \hat{a} \hat{S}(\xi) = \hat{a}\left(1 + \frac{r^2}{2!} + \frac{r^4}{4!} + \dots\right) - \xi\hat{a}^\dagger\left(1 + \frac{r^2}{3!} + \frac{r^4}{5!} + \dots\right)
+\end{equation*}
+Substituting $\xi = r e^{i\theta}$ and factoring out $r$ for the second series:
+\begin{equation*}
+\hat{S}^\dagger(\xi) \hat{a} \hat{S}(\xi) = \hat{a}\left(1 + \frac{r^2}{2!} + \frac{r^4}{4!} + \dots\right) - e^{i\theta}\hat{a}^\dagger\left(r + \frac{r^3}{3!} + \frac{r^5}{5!} + \dots\right)
+\end{equation*}
+These are the Taylor series for $\cosh(r)$ and $\sinh(r)$:
+\begin{equation*}
+\hat{S}^\dagger(\xi) \hat{a} \hat{S}(\xi) = \cosh(r)\hat{a} - e^{i\theta}\sinh(r)\hat{a}^\dagger
+\end{equation*}
+
+\subsubsection{Final Expression}
+Defining $\mu = \cosh r$ and $\nu = e^{i\theta}\sinh r$:
+\begin{equation}
+\hat{S}(\xi)^\dagger \hat{a} \hat{S}(\xi) = \mu\hat{a} - \nu\hat{a}^\dagger
+\end{equation}
+
+
+\subsection{Derivation of the Normal-Ordered Squeezing Operator using Operator Algebra}
+
+Our goal is to rewrite the single-mode squeezing operator $\hat{S}(\xi)$ into normal order, where all creation operators ($\hat{a}^\dagger$) are on the left, the number operators ($\hat{n} = \hat{a}^\dagger\hat{a}$) are in the middle, and the annihilation operators ($\hat{a}$) are on the right. 
+
+\subsubsection{Constructing the Normal-Ordered Ansatz}
+Let us propose a general normal-ordered ansatz with unknown scalar coefficients $A$, $B$, and $C$, and a normalization constant $M$:
+\begin{equation*}
+\hat{S} = M e^{A(\hat{a}^\dagger)^2} e^{B\hat{a}^\dagger\hat{a}} e^{C\hat{a}^2}
+\end{equation*}
+
+Because the squeezing operator is unitary, its inverse is its adjoint ($\hat{S}^{-1} = \hat{S}^\dagger$). From the work above, we know how this operator transforms the fundamental mode operators:
+\begin{align*}
+\hat{S}^{-1} \hat{a} \hat{S} &= \mu\hat{a} - \nu\hat{a}^\dagger \\
+\hat{S}^{-1} \hat{a}^\dagger \hat{S} &= \mu\hat{a}^\dagger - \nu^*\hat{a}
+\end{align*}
+where $\mu = \cosh r$ and $\nu = e^{i\theta}\sinh r$. 
+
+If we push the operators $\hat{a}$ and $\hat{a}^\dagger$ through our ansatz using the Baker-Campbell-Hausdorff (BCH) lemma and equate the results to the known transformations, we can solve for $A$, $B$, and $C$.
+
+\subsubsection{Pushing the Creation Operator Through the Ansatz}
+We evaluate the transformation of $\hat{a}^\dagger$ using our proposed form:
+\begin{equation*}
+\hat{S}^{-1} \hat{a}^\dagger \hat{S} = \left(e^{-C\hat{a}^2} e^{-B\hat{a}^\dagger\hat{a}} e^{-A(\hat{a}^\dagger)^2} M^{-1}\right) \hat{a}^\dagger \left(M e^{A(\hat{a}^\dagger)^2} e^{B\hat{a}^\dagger\hat{a}} e^{C\hat{a}^2}\right)
+\end{equation*}
+The scalars $M$ and $M^{-1}$ cancel out. We move $\hat{a}^\dagger$ from the center to the right using the BCH expansion: $e^{\hat{X}}\hat{Y}e^{-\hat{X}} = \hat{Y} + [\hat{X},\hat{Y}] + \frac{1}{2!}[\hat{X},[\hat{X},\hat{Y}]] + \dots$
+
+\textbf{Step 2a: Commute through the $A$ term} \\
+We evaluate $e^{-A(\hat{a}^\dagger)^2} \hat{a}^\dagger e^{A(\hat{a}^\dagger)^2}$. Because $[\hat{a}^\dagger, \hat{a}^\dagger] = 0$, all commutators are zero. The operator passes through unchanged:
+\begin{equation*}
+\hat{a}^\dagger
+\end{equation*}
+
+\textbf{Step 2b: Commute through the $B$ term} \\
+We evaluate $e^{-B\hat{n}} \hat{a}^\dagger e^{B\hat{n}}$. Using $\hat{X} = -B\hat{n}$ and $\hat{Y} = \hat{a}^\dagger$, and knowing $[\hat{n}, \hat{a}^\dagger] = \hat{a}^\dagger$:
+\begin{align*}
+[-B\hat{n}, \hat{a}^\dagger] &= -B\hat{a}^\dagger \\
+[-B\hat{n}, -B\hat{a}^\dagger] &= B^2\hat{a}^\dagger
+\end{align*}
+Summing the series gives:
+\begin{equation*}
+\hat{a}^\dagger\left(1 - B + \frac{B^2}{2!} - \dots\right) = e^{-B}\hat{a}^\dagger
+\end{equation*}
+
+\textbf{Step 2c: Commute through the $C$ term} \\
+We evaluate $e^{-C\hat{a}^2} (e^{-B}\hat{a}^\dagger) e^{C\hat{a}^2}$. Using $\hat{X} = -C\hat{a}^2$ and $\hat{Y} = \hat{a}^\dagger$, and knowing $[\hat{a}^2, \hat{a}^\dagger] = 2\hat{a}$:
+\begin{align*}
+[-C\hat{a}^2, \hat{a}^\dagger] &= -C(2\hat{a}) = -2C\hat{a} \\
+[-C\hat{a}^2, -2C\hat{a}] &= 2C^2[\hat{a}^2, \hat{a}] = 0
+\end{align*}
+The series truncates immediately, yielding:
+\begin{equation*}
+e^{-B}(\hat{a}^\dagger - 2C\hat{a})
+\end{equation*}
+
+\textbf{Solving for $B$ and $C$:} \\
+We equate our final expression to the known transformation:
+\begin{equation*}
+e^{-B}\hat{a}^\dagger - 2Ce^{-B}\hat{a} = \mu\hat{a}^\dagger - \nu^*\hat{a}
+\end{equation*}
+Matching the coefficients of $\hat{a}^\dagger$: 
+\begin{equation*}
+e^{-B} = \mu \implies B = -\ln\mu
+\end{equation*}
+Matching the coefficients of $\hat{a}$:
+\begin{equation*}
+-2C(e^{-B}) = -\nu^* \implies -2C\mu = -\nu^* \implies C = \frac{\nu^*}{2\mu}
+\end{equation*}
+
+\subsubsection{Pushing the Annihilation Operator Through the Ansatz}
+Now we evaluate the transformation of $\hat{a}$ to find $A$:
+\begin{equation*}
+\hat{S}^{-1} \hat{a} \hat{S} = e^{-C\hat{a}^2} e^{-B\hat{a}^\dagger\hat{a}} e^{-A(\hat{a}^\dagger)^2} \hat{a} e^{A(\hat{a}^\dagger)^2} e^{B\hat{a}^\dagger\hat{a}} e^{C\hat{a}^2}
+\end{equation*}
+
+\textbf{Step 3a: Commute through the $A$ term} \\
+Evaluate $e^{-A(\hat{a}^\dagger)^2} \hat{a} e^{A(\hat{a}^\dagger)^2}$. Knowing $[(\hat{a}^\dagger)^2, \hat{a}] = -2\hat{a}^\dagger$:
+\begin{equation*}
+\hat{a} + 2A\hat{a}^\dagger
+\end{equation*}
+
+\textbf{Step 3b: Commute through the $B$ term} \\
+Evaluate $e^{-B\hat{n}} (\hat{a} + 2A\hat{a}^\dagger) e^{B\hat{n}}$. We apply the linear transformation to both terms. From Step 2b, $\hat{a}^\dagger \rightarrow e^{-B}\hat{a}^\dagger$. For the $\hat{a}$ term, knowing $[\hat{n}, \hat{a}] = -\hat{a}$, the BCH series evaluates to $e^B\hat{a}$. The result is:
+\begin{equation*}
+e^B\hat{a} + 2Ae^{-B}\hat{a}^\dagger
+\end{equation*}
+
+\textbf{Step 3c: Commute through the $C$ term} \\
+Evaluate $e^{-C\hat{a}^2} (e^B\hat{a} + 2Ae^{-B}\hat{a}^\dagger) e^{C\hat{a}^2}$. Since $[\hat{a}^2, \hat{a}] = 0$, the first term is untouched. From Step 2c, $\hat{a}^\dagger \rightarrow \hat{a}^\dagger - 2C\hat{a}$.
+\begin{equation*}
+e^B\hat{a} + 2Ae^{-B}(\hat{a}^\dagger - 2C\hat{a}) = (e^B - 4ACe^{-B})\hat{a} + 2Ae^{-B}\hat{a}^\dagger
+\end{equation*}
+
+\textbf{Solving for $A$:} \\
+Equate the coefficient of $\hat{a}^\dagger$ to the known transformation ($\mu\hat{a} - \nu\hat{a}^\dagger$):
+\begin{equation*}
+2Ae^{-B} = -\nu \implies 2A\mu = -\nu \implies A = -\frac{\nu}{2\mu}
+\end{equation*}
+
+\subsubsection{Determining the Normalization Scalar}
+Our ansatz is now populated with the operational coefficients:
+\begin{equation*}
+\hat{S} = M \exp\left(-\frac{\nu}{2\mu}(\hat{a}^\dagger)^2\right) \exp\left(-(\ln\mu)\hat{a}^\dagger\hat{a}\right) \exp\left(\frac{\nu^*}{2\mu}\hat{a}^2\right)
+\end{equation*}
+We apply this operator to the vacuum state $|0\rangle$ to enforce the norm condition $\langle \xi | \xi \rangle = 1$, where $|\xi\rangle = \hat{S}|0\rangle$. Because $\hat{a}^2|0\rangle = 0$ and $\hat{a}^\dagger\hat{a}|0\rangle = 0$, the two rightmost exponentials act as the identity:
+\begin{equation*}
+|\xi\rangle = M \exp\left(-\frac{\nu}{2\mu}(\hat{a}^\dagger)^2\right)|0\rangle
+\end{equation*}
+Expanding this into a Taylor series and applying it to the vacuum yields the Fock state expansion:
+\begin{equation*}
+|\xi\rangle = M \sum_{k=0}^{\infty} \frac{1}{k!} \left(-\frac{\nu}{2\mu}\right)^k \sqrt{(2k)!} |2k\rangle
+\end{equation*}
+Squaring this to find the total probability (the norm), which must equal $1$:
+\begin{equation*}
+\langle \xi | \xi \rangle = |M|^2 \sum_{k=0}^{\infty} \frac{(2k)!}{(k!)^2} \left|\frac{\nu}{2\mu}\right|^{2k} = 1
+\end{equation*}
+Using the binomial series for negative fractional powers, $(1 - x)^{-1/2} = \sum_{k=0}^{\infty} \frac{(2k)!}{(k!)^2} \left(\frac{x}{4}\right)^k$, we substitute $x = \tanh^2 r$ (since $\frac{\tanh^2 r}{4} = \left|\frac{\nu}{2\mu}\right|^2$).
+\begin{equation*}
+\sum_{k=0}^{\infty} \frac{(2k)!}{(k!)^2} \left|\frac{\nu}{2\mu}\right|^{2k} = (1 - \tanh^2 r)^{-1/2} = (\text{sech}^2 r)^{-1/2} = \cosh r = \mu
+\end{equation*}
+Substituting this back into the norm equation:
+\begin{equation*}
+|M|^2 \mu = 1 \implies M = \mu^{-1/2}
+\end{equation*}
+
+\subsubsection{Final Assembly}
+We place $M$ back into the full operational expression:
+\begin{equation*}
+\hat{S}(\xi) = \mu^{-1/2} \exp\left(-\frac{\nu}{2\mu}(\hat{a}^\dagger)^2\right) \exp\left(-(\ln\mu)\hat{a}^\dagger\hat{a}\right) \exp\left(\frac{\nu^*}{2\mu}\hat{a}^2\right)
+\end{equation*}
+We combine the scalar $\mu^{-1/2}$ into the middle exponent using logarithm rules ($\mu^y = e^{y\ln\mu}$):
+\begin{equation*}
+\mu^{-1/2} \exp\left(-(\ln\mu)\hat{a}^\dagger\hat{a}\right) = \mu^{-1/2} \mu^{-\hat{a}^\dagger\hat{a}} = \mu^{-(\hat{a}^\dagger\hat{a} + 1/2)}
+\end{equation*}
+Yielding the final, exact normal-ordered form of the squeezing operator:
+\begin{equation}
+\hat{S}(\xi) = \exp\left(-\frac{\nu}{2\mu}(\hat{a}^\dagger)^2\right)\mu^{-(\hat{a}^\dagger\hat{a}+\frac{1}{2})}\exp\left(\frac{\nu^*}{2\mu}\hat{a}^2\right)
+\end{equation}
+
+\subsubsection{Squeezed state form}
+
+We have stated earlier:
+
+\begin{equation*}
+|\xi\rangle = M \sum_{k=0}^{\infty} \frac{1}{k!} \left(-\frac{\nu}{2\mu}\right)^k \sqrt{(2k)!} |2k\rangle
+\end{equation*}
+
+Thus, we have
+
+\begin{equation}
+|\xi\rangle = \mu^{-1/2} \sum_{k=0}^{\infty} \frac{1}{k!} \left(-\frac{\nu}{2\mu}\right)^k \sqrt{(2k)!} |2k\rangle
+\end{equation}
+
+which is also a consequent result of our ansatz based approach.
+
+\newpage
+
+
+\subsection{Derivation of the Wigner Function for the Squeezed Vacuum State}
+
+This derivation approaches the Wigner function $W(x,p)$ of the squeezed vacuum state by first determining its position wavefunction, and then applying the Fourier transform definition of the Wigner function.
+
+\subsubsection{The Annihilation Condition}
+For a state created by acting on the vacuum $|0\rangle$ with a unitary operator, the resulting state is the ``vacuum'' for the correspondingly transformed annihilation operator. 
+
+For the squeezed vacuum state $|\xi\rangle = \hat{S}(\xi)|0\rangle$, we define a transformed annihilation operator $\hat{b}$:
+\begin{equation*}
+\hat{b} = \hat{S}(\xi)\hat{a}\hat{S}^\dagger(\xi)
+\end{equation*}
+Because the standard annihilation operator destroys the vacuum ($\hat{a}|0\rangle = 0$), the transformed operator must destroy the squeezed vacuum:
+\begin{equation*}
+\hat{b}|\xi\rangle = \hat{S}(\xi)\hat{a}\hat{S}^\dagger(\xi) \hat{S}(\xi)|0\rangle = \hat{S}(\xi)\hat{a}|0\rangle = 0
+\end{equation*}
+
+\subsubsection{Formulating $\hat{b}$ in Phase Space}
+From the known mode evolution, $\hat{S}^\dagger(\xi)\hat{a}\hat{S}(\xi) = \mu\hat{a} - \nu\hat{a}^\dagger$. To find $\hat{S}(\xi)\hat{a}\hat{S}^\dagger(\xi)$, we invert the operation by replacing the squeezing parameter $\xi$ with $-\xi$, which flips the sign of $\nu$:
+\begin{equation*}
+\hat{b} = \mu\hat{a} + \nu\hat{a}^\dagger
+\end{equation*}
+
+Assuming a purely real squeezing parameter $\xi = r$ (setting the angle $\theta = 0$), we have $\mu = \cosh r$ and $\nu = \sinh r$:
+\begin{equation*}
+\hat{b} = \cosh(r)\hat{a} + \sinh(r)\hat{a}^\dagger
+\end{equation*}
+
+We express the creation and annihilation operators in terms of the position and momentum quadratures, $\hat{a} = \hat{q} + i\hat{p}$ and $\hat{a}^\dagger = \hat{q} - i\hat{p}$:
+\begin{align*}
+\hat{b} &= \cosh(r)(\hat{q} + i\hat{p}) + \sinh(r)(\hat{q} - i\hat{p}) \\
+&= (\cosh r + \sinh r)\hat{q} + i(\cosh r - \sinh r)\hat{p}
+\end{align*}
+Using the identities $e^{\pm r} = \cosh r \pm \sinh r$, we finalize the operator:
+\begin{equation*}
+\hat{b} = e^{r}\hat{q} + i e^{-r} \hat{p}
+\end{equation*}
+
+\subsubsection{Solving the Position Wavefunction}
+We apply the condition $\hat{b}|\xi\rangle = 0$ in the continuous position basis to solve for the wavefunction $\psi(x) = \langle x | \xi \rangle$. 
+
+The commutation relation $[\hat{q}, \hat{p}] = i/2$ dictates the representations $\hat{q} \to x$ and $\hat{p} \to -\frac{i}{2}\frac{d}{dx}$. Substituting these yields a first-order differential equation:
+\begin{align*}
+\left( e^{r} x + i e^{-r} \left( -\frac{i}{2}\frac{d}{dx} \right) \right) \psi(x) &= 0 \\
+e^{r} x \psi(x) + \frac{1}{2} e^{-r} \frac{d\psi(x)}{dx} &= 0 \\
+\frac{d\psi(x)}{dx} &= -2 e^{2r} x \psi(x)
+\end{align*}
+
+Integrating this separable differential equation produces a Gaussian distribution with a normalization constant $N$:
+\begin{align*}
+\ln \psi(x) &= -e^{2r} x^2 + C \\
+\psi(x) &= N \exp\left(-e^{2r} x^2\right)
+\end{align*}
+
+We find $N$ by enforcing the probability normalization $\int_{-\infty}^{\infty} |\psi(x)|^2 dx = 1$:
+\begin{equation*}
+|N|^2 \int_{-\infty}^{\infty} \exp\left(-2e^{2r} x^2\right) dx = 1
+\end{equation*}
+Using the standard Gaussian integral $\int e^{-ax^2} dx = \sqrt{\pi/a}$ with $a = 2e^{2r}$:
+\begin{equation*}
+|N|^2 \sqrt{\frac{\pi}{2e^{2r}}} = 1 \implies N = \left( \frac{2e^{2r}}{\pi} \right)^{1/4}
+\end{equation*}
+The exact, normalized position wavefunction is:
+\begin{equation*}
+\psi(x) = \left( \frac{2e^{2r}}{\pi} \right)^{1/4} \exp\left(-e^{2r} x^2\right)
+\end{equation*}
+
+\subsubsection{Integrating the Wigner Function}
+The Wigner function for a pure state is:
+\begin{equation*}
+W(x,p) = \frac{1}{\pi\hbar} \int_{-\infty}^{\infty} \psi^*(x+y)\psi(x-y) e^{2ipy/\hbar} dy
+\end{equation*}
+Because $[\hat{q}, \hat{p}] = i/2$, the effective value for $\hbar$ is $1/2$. This simplifies the expression to:
+\begin{equation*}
+W(x,p) = \frac{2}{\pi} \int_{-\infty}^{\infty} \psi^*(x+y)\psi(x-y) e^{4ipy} dy
+\end{equation*}
+
+We explicitly evaluate the product of the wavefunctions:
+\begin{align*}
+\psi^*(x+y)\psi(x-y) &= \sqrt{\frac{2e^{2r}}{\pi}} \exp\left[ -e^{2r}(x+y)^2 - e^{2r}(x-y)^2 \right] \\
+&= \sqrt{\frac{2e^{2r}}{\pi}} \exp\left( -2e^{2r}x^2 - 2e^{2r}y^2 \right)
+\end{align*}
+
+Substituting this back into the Wigner integral and pulling independent terms outside:
+\begin{equation*}
+W(x,p) = \frac{2}{\pi} \sqrt{\frac{2e^{2r}}{\pi}} \exp\left(-2e^{2r}x^2\right) \int_{-\infty}^{\infty} \exp\left(-2e^{2r}y^2\right) e^{4ipy} dy
+\end{equation*}
+
+The integral is a standard Fourier transform of a Gaussian, $\int e^{-ay^2 + by} dy = \sqrt{\frac{\pi}{a}} e^{b^2 / 4a}$, with $a = 2e^{2r}$ and $b = 4ip$:
+\begin{equation*}
+\frac{b^2}{4a} = \frac{(4ip)^2}{4(2e^{2r})} = \frac{-16p^2}{8e^{2r}} = -2e^{-2r}p^2
+\end{equation*}
+The integral evaluates to:
+\begin{equation*}
+\sqrt{\frac{\pi}{2e^{2r}}} \exp\left(-2e^{-2r}p^2\right)
+\end{equation*}
+
+Multiplying this by the prefactors:
+\begin{equation*}
+W(x,p) = \frac{2}{\pi} \sqrt{\frac{2e^{2r}}{\pi}} \exp\left(-2e^{2r}x^2\right) \sqrt{\frac{\pi}{2e^{2r}}} \exp\left(-2e^{-2r}p^2\right)
+\end{equation*}
+
+The square root multipliers cancel out exactly ($\sqrt{A/\pi} \cdot \sqrt{\pi/A} = 1$). The final Wigner function is:
+\begin{equation}
+W(x,p) = \frac{2}{\pi} \exp\left(-2e^{2r}x^2 - 2e^{-2r}p^2\right)
+\end{equation}
+
+\newpage
+
+\subsection{Algebraic Derivation of Two-Mode Squeezing}
+
+\subsubsection{Definitions}
+We would now like to move from the single-mode formalism to two independent bosonic modes, which is required for the generation of continuous-variable entanglement.
+Let $\hat{a}$ and $\hat{b}$ represent independent modes.
+\begin{align*}
+[\hat{a}, \hat{a}^\dagger] &= 1, \quad [\hat{b}, \hat{b}^\dagger] = 1 \\
+[\hat{a}, \hat{b}] &= [\hat{a}, \hat{b}^\dagger] = [\hat{a}^\dagger, \hat{b}] = 0
+\end{align*}
+The two-mode squeezing operator is defined as:
+\begin{equation*}
+\hat{S}_2(\xi) = \exp(\xi\hat{a}^\dagger\hat{b}^\dagger - \xi^*\hat{a}\hat{b})
+\end{equation*}
+where $\xi = re^{i\theta}$.
+
+\subsubsection{Mode Evolution}
+We evaluate $\hat{S}_2^\dagger(\xi) \hat{a} \hat{S}_2(\xi)$. Define the exponent $\hat{K} = \xi^*\hat{a}\hat{b} - \xi\hat{a}^\dagger\hat{b}^\dagger$. Using the Baker-Campbell-Hausdorff (BCH)  (similar to the one for single mode):
+\begin{equation*}
+e^{\hat{K}} \hat{a} e^{-\hat{K}} = \hat{a} + [\hat{K}, \hat{a}] + \frac{1}{2!}[\hat{K}, [\hat{K}, \hat{a}]] + \dots
+\end{equation*}
+Evaluating the commutators:
+\begin{align*}
+[\hat{K}, \hat{a}] &= [\xi^*\hat{a}\hat{b} - \xi\hat{a}^\dagger\hat{b}^\dagger, \hat{a}] = [-\xi\hat{a}^\dagger\hat{b}^\dagger, \hat{a}] = -\xi[\hat{a}^\dagger, \hat{a}]\hat{b}^\dagger = \xi\hat{b}^\dagger \\
+[\hat{K}, [\hat{K}, \hat{a}]] &= [\xi^*\hat{a}\hat{b} - \xi\hat{a}^\dagger\hat{b}^\dagger, \xi\hat{b}^\dagger] = [\xi^*\hat{a}\hat{b}, \xi\hat{b}^\dagger] = \xi\xi^*\hat{a}[\hat{b}, \hat{b}^\dagger] = r^2\hat{a}
+\end{align*}
+Substituting back into the series:
+\begin{equation*}
+\hat{S}_2^\dagger \hat{a} \hat{S}_2 = \hat{a}\left(1 + \frac{r^2}{2!} + \frac{r^4}{4!} + \dots\right) + \xi\hat{b}^\dagger\left(1 + \frac{r^2}{3!} + \frac{r^4}{5!} + \dots\right)
+\end{equation*}
+Substituting $\xi = e^{i\theta}r$, $\mu = \cosh r$, and $\nu = e^{i\theta}\sinh r$:
+\begin{equation}
+\hat{S}_2^\dagger \hat{a} \hat{S}_2 = \mu\hat{a} + \nu\hat{b}^\dagger
+\end{equation}
+By symmetry for mode $\hat{b}$:
+\begin{equation}
+\hat{S}_2^\dagger \hat{b}^\dagger \hat{S}_2 = \nu^*\hat{a} + \mu\hat{b}^\dagger
+\end{equation}
+
+\subsubsection{Normal-Ordered Ladder Expansion}
+Propose an algebraic ansatz with coefficients $A, B, C$ and scalar $M$:
+\begin{equation*}
+\hat{S}_2 = M e^{A\hat{a}^\dagger\hat{b}^\dagger} e^{B(\hat{a}^\dagger\hat{a} + \hat{b}^\dagger\hat{b})} e^{C\hat{a}\hat{b}}
+\end{equation*}
+The inverse is:
+\begin{equation*}
+\hat{S}_2^{-1} = e^{-C\hat{a}\hat{b}} e^{-B(\hat{n}_a + \hat{n}_b)} e^{-A\hat{a}^\dagger\hat{b}^\dagger} M^{-1}
+\end{equation*}
+
+\textbf{Step 3a: Push $\hat{b}^\dagger$ through $\hat{S}_2^{-1}$}
+\begin{align*}
+\text{Through A:} \quad & e^{-A\hat{a}^\dagger\hat{b}^\dagger} \hat{b}^\dagger e^{A\hat{a}^\dagger\hat{b}^\dagger} = \hat{b}^\dagger \\
+\text{Through B:} \quad & e^{-B\hat{n}_b} \hat{b}^\dagger e^{B\hat{n}_b} \implies [-B\hat{n}_b, \hat{b}^\dagger] = -B\hat{b}^\dagger \implies e^{-B}\hat{b}^\dagger \\
+\text{Through C:} \quad & e^{-C\hat{a}\hat{b}} (e^{-B}\hat{b}^\dagger) e^{C\hat{a}\hat{b}} \implies [-C\hat{a}\hat{b}, \hat{b}^\dagger] = -C\hat{a} \implies e^{-B}(\hat{b}^\dagger - C\hat{a})
+\end{align*}
+Equating to the known evolution $\hat{S}_2^{-1} \hat{b}^\dagger \hat{S}_2 = \nu^*\hat{a} + \mu\hat{b}^\dagger$:
+\begin{equation*}
+e^{-B}\hat{b}^\dagger - Ce^{-B}\hat{a} = \mu\hat{b}^\dagger + \nu^*\hat{a} \implies B = -\ln\mu, \quad C = -\frac{\nu^*}{\mu}
+\end{equation*}
+
+\textbf{Step 3b: Push $\hat{a}$ through $\hat{S}_2^{-1}$}
+\begin{align*}
+\text{Through A:} \quad & e^{-A\hat{a}^\dagger\hat{b}^\dagger} \hat{a} e^{A\hat{a}^\dagger\hat{b}^\dagger} \implies [-A\hat{a}^\dagger\hat{b}^\dagger, \hat{a}] = A\hat{b}^\dagger \implies \hat{a} + A\hat{b}^\dagger \\
+\text{Through B:} \quad & e^{-B(\hat{n}_a+\hat{n}_b)} (\hat{a} + A\hat{b}^\dagger) e^{B(\hat{n}_a+\hat{n}_b)} \implies e^B\hat{a} + Ae^{-B}\hat{b}^\dagger \\
+\text{Through C:} \quad & e^{-C\hat{a}\hat{b}} (e^B\hat{a} + Ae^{-B}\hat{b}^\dagger) e^{C\hat{a}\hat{b}} \implies e^B\hat{a} + Ae^{-B}(\hat{b}^\dagger - C\hat{a}) \\
+& = (e^B - ACe^{-B})\hat{a} + Ae^{-B}\hat{b}^\dagger
+\end{align*}
+Equating to $\mu\hat{a} + \nu\hat{b}^\dagger$:
+\begin{equation*}
+Ae^{-B} = \nu \implies A\mu = \nu \implies A = \frac{\nu}{\mu}
+\end{equation*}
+
+\textbf{Step 3c: Determining Normalization $M$}
+Applying the populated ansatz to the vacuum $|0,0\rangle$, we have:
+\begin{equation*}
+|EPR\rangle = \hat{S}_2|0,0\rangle = M \exp\left(\frac{\nu}{\mu}\hat{a}^\dagger\hat{b}^\dagger\right)|0,0\rangle = M \sum_{k=0}^{\infty} \left(\frac{\nu}{\mu}\right)^k |k,k\rangle
+\end{equation*}
+Enforce normalization $\langle \psi | \psi \rangle = 1$:
+\begin{align*}
+|M|^2 \sum_{k=0}^{\infty} \left|\frac{\nu}{\mu}\right|^{2k} &= |M|^2 \sum_{k=0}^{\infty} (\tanh^2 r)^k \\
+&= |M|^2 \left(\frac{1}{1 - \tanh^2 r}\right) = |M|^2 \cosh^2 r = 1 \implies M = \mu^{-1}
+\end{align*}
+
+\textbf{Step 3d: Final Assembly}
+Substitute $M$ and combine the middle exponent terms using $\mu^y = e^{y\ln\mu}$:
+\begin{align}
+\hat{S}_2(\xi) &= \mu^{-1} \exp\left(\frac{\nu}{\mu}\hat{a}^\dagger\hat{b}^\dagger\right) \exp\left(-(\ln\mu)(\hat{a}^\dagger\hat{a} + \hat{b}^\dagger\hat{b})\right) \exp\left(-\frac{\nu^*}{\mu}\hat{a}\hat{b}\right) \\
+\hat{S}_2(\xi) &= \exp\left(\frac{\nu}{\mu}\hat{a}^\dagger\hat{b}^\dagger\right) \mu^{-(\hat{a}^\dagger\hat{a} + \hat{b}^\dagger\hat{b} + 1)} \exp\left(-\frac{\nu^*}{\mu}\hat{a}\hat{b}\right)
+\end{align}
+
+\subsubsection{Sidenote :}
+
+From the normalization step for M, we can directly substitute and arrive at the state eqn. : 
+\begin{equation}
+|EPR\rangle= \mu^{-1} \sum_{k=0}^{\infty} \left(\frac{\nu}{\mu}\right)^k |k,k\rangle
+\end{equation}
+
+\newpage
+\subsection{Creating Gaussian EPR states}
+
+\subsubsection{Preliminary Properties for Usage}
+
+Our aim here is to evaluate the expectation values of the mode operators for the squeezed vacuum state $|\xi\rangle = \hat{S}(\xi)|0\rangle$. We shall be relying on the known evolutions: $\hat{S}^\dagger \hat{a} \hat{S} = \mu\hat{a} - \nu\hat{a}^\dagger$ and $\hat{S}^\dagger \hat{a}^\dagger \hat{S} = \mu\hat{a}^\dagger - \nu^*\hat{a}$, where $\mu = \cosh r$ and $\nu = e^{i\theta}\sinh r$. 
+
+The core rule for these derivations is that the annihilation operator destroys the vacuum ($\hat{a}|0\rangle = 0$), and its dual creates zero when acting to the left ($\langle 0|\hat{a}^\dagger = 0$).
+
+\subsubsection{The First Moments (Means)}
+We begin by proving that the expectation values of the fundamental mode operators are strictly zero.
+\begin{align*}
+\langle \xi | \hat{a} | \xi \rangle &= \langle 0 | \hat{S}^\dagger \hat{a} \hat{S} | 0 \rangle \\
+&= \langle 0 | (\mu\hat{a} - \nu\hat{a}^\dagger) | 0 \rangle \\
+&= \mu \langle 0 | \hat{a} | 0 \rangle - \nu \langle 0 | \hat{a}^\dagger | 0 \rangle
+\end{align*}
+Because $\hat{a}|0\rangle = 0$ and $\langle 0|\hat{a}^\dagger = 0$, both terms independently evaluate to zero:
+\begin{equation*}
+\langle \xi | \hat{a} | \xi \rangle = 0
+\end{equation*}
+By applying the exact same logic and taking the complex conjugate, the creation operator mean is also zero:
+\begin{equation*}
+\langle \xi | \hat{a}^\dagger | \xi \rangle = 0
+\end{equation*}
+
+\subsubsection{The Photon Number}
+Next, we prove that the expected photon number $\langle\hat{n}\rangle = \langle \hat{a}^\dagger \hat{a} \rangle$ equals $\sinh^2 r$. To do this, we insert the identity $\hat{I} = \hat{S}\hat{S}^\dagger$ between the operators.
+\begin{align*}
+\langle \xi | \hat{a}^\dagger\hat{a} | \xi \rangle &= \langle 0 | \hat{S}^\dagger \hat{a}^\dagger (\hat{S}\hat{S}^\dagger) \hat{a} \hat{S} | 0 \rangle \\
+&= \langle 0 | (\hat{S}^\dagger \hat{a}^\dagger \hat{S}) (\hat{S}^\dagger \hat{a} \hat{S}) | 0 \rangle \\
+&= \langle 0 | (\mu\hat{a}^\dagger - \nu^*\hat{a})(\mu\hat{a} - \nu\hat{a}^\dagger) | 0 \rangle
+\end{align*}
+We explicitly expand this binomial product, ensuring no terms are skipped:
+\begin{equation*}
+= \langle 0 | \mu^2 \hat{a}^\dagger\hat{a} - \mu\nu \hat{a}^\dagger\hat{a}^\dagger - \nu^*\mu \hat{a}\hat{a} + |\nu|^2 \hat{a}\hat{a}^\dagger | 0 \rangle
+\end{equation*}
+We now evaluate the action of these four operators on the vacuum state $|0\rangle$:
+\begin{enumerate}
+    \item $\hat{a}^\dagger\hat{a} | 0 \rangle = \hat{a}^\dagger (0) = 0$
+    \item $\hat{a}^\dagger\hat{a}^\dagger | 0 \rangle = \sqrt{2} | 2 \rangle$. Because $\langle 0 | 2 \rangle = 0$, this term vanishes.
+    \item $\hat{a}\hat{a} | 0 \rangle = \hat{a} (0) = 0$
+    \item $\hat{a}\hat{a}^\dagger | 0 \rangle = \hat{a} | 1 \rangle = | 0 \rangle$. This is the only term that survives.
+\end{enumerate}
+Substituting these evaluations back into our expansion yields:
+\begin{equation*}
+\langle \xi | \hat{a}^\dagger\hat{a} | \xi \rangle = |\nu|^2 \langle 0 | 0 \rangle = |\nu|^2
+\end{equation*}
+Because $\nu = e^{i\theta}\sinh r$, its absolute square is $|\nu|^2 = \sinh^2 r$.
+\begin{equation}
+\langle \xi | \hat{a}^\dagger\hat{a} | \xi \rangle = \sinh^2 r
+\end{equation}
+
+\subsubsection{The Variance / Squeezing Terms}
+We now calculate the expectations of the paired annihilation and creation operators.
+\begin{align*}
+\langle \xi | \hat{a}\hat{a} | \xi \rangle &= \langle 0 | (\hat{S}^\dagger \hat{a} \hat{S}) (\hat{S}^\dagger \hat{a} \hat{S}) | 0 \rangle \\
+&= \langle 0 | (\mu\hat{a} - \nu\hat{a}^\dagger)(\mu\hat{a} - \nu\hat{a}^\dagger) | 0 \rangle
+\end{align*}
+Expanding the binomial product completely:
+\begin{equation*}
+= \langle 0 | \mu^2 \hat{a}\hat{a} - \mu\nu \hat{a}\hat{a}^\dagger - \nu\mu \hat{a}^\dagger\hat{a} + \nu^2 \hat{a}^\dagger\hat{a}^\dagger | 0 \rangle
+\end{equation*}
+Using the exact same vacuum evaluation rules established above (from the annihilation and creation operators' action on vacuum state), only the $\hat{a}\hat{a}^\dagger$ operator survives acting on $|0\rangle$:
+\begin{equation*}
+\langle \xi | \hat{a}\hat{a} | \xi \rangle = -\mu\nu \langle 0 | \hat{a}\hat{a}^\dagger | 0 \rangle = -\mu\nu
+\end{equation*}
+Substituting our definitions for $\mu$ and $\nu$:
+\begin{equation}
+\langle \xi | \hat{a}\hat{a} | \xi \rangle = -(\cosh r)(e^{i\theta}\sinh r) = -e^{i\theta}\sinh r \cosh r
+\end{equation}
+
+By applying identical logic to the creation operators, we evaluate $\langle \hat{a}^\dagger\hat{a}^\dagger \rangle$:
+\begin{align*}
+\langle \xi | \hat{a}^\dagger\hat{a}^\dagger | \xi \rangle &= \langle 0 | (\mu\hat{a}^\dagger - \nu^*\hat{a})(\mu\hat{a}^\dagger - \nu^*\hat{a}) | 0 \rangle \\
+&= \langle 0 | \mu^2 \hat{a}^\dagger\hat{a}^\dagger - \mu\nu^* \hat{a}^\dagger\hat{a} - \nu^*\mu \hat{a}\hat{a}^\dagger + (\nu^*)^2 \hat{a}\hat{a} | 0 \rangle \\
+&= -\mu\nu^* \langle 0 | \hat{a}\hat{a}^\dagger | 0 \rangle = -\mu\nu^*
+\end{align*}
+Substituting the definitions yields the final statistic:
+\begin{equation}
+\langle \xi | \hat{a}^\dagger\hat{a}^\dagger | \xi \rangle = -e^{-i\theta}\sinh r \cosh r
+\end{equation}
+
+
+
+\subsection{Explicit Derivation of the Matrices for the Gaussian EPR State}
+
+The creation of a Gaussian EPR state involves passing two independent squeezed vacuum states through a balanced $50{:}50$ beam-splitter. We construct the three fundamental matrices governing this evolution in phase space: the input covariance matrix ($\sigma_{in}$), the symplectic beam-splitter matrix ($B$), and the output covariance matrix ($\sigma_{EPR}$). 
+
+\subsubsection{Deriving the Input Covariance Matrix }
+The continuous variable phase space is defined by the quadrature vector $\vec{R} = (\hat{q}_1, \hat{p}_1, \hat{q}_2, \hat{p}_2)^T$. The elements of the covariance matrix $\sigma$ for zero-mean states are given by $\sigma_{ij} = \frac{1}{2}\langle \hat{R}_i\hat{R}_j + \hat{R}_j\hat{R}_i \rangle$. 
+
+We decompose the quadratures into annihilation and creation operators using $\hat{q} = \frac{1}{2}(\hat{a} + \hat{a}^\dagger)$ and $\hat{p} = \frac{1}{2i}(\hat{a} - \hat{a}^\dagger)$.
+For a single-mode squeezed state (assuming $\theta = 0$), the known expectations are:
+\begin{equation*}
+\langle \hat{a}^\dagger\hat{a} \rangle = \sinh^2 r, \quad \langle \hat{a}\hat{a}^\dagger \rangle = \cosh^2 r, \quad \langle \hat{a}^2 \rangle = \langle (\hat{a}^\dagger)^2 \rangle = -\sinh r \cosh r
+\end{equation*}
+
+\textbf{Evaluating Mode 1 (squeezed by parameter $r$):}
+\begin{align*}
+\langle\hat{q}_1^2\rangle &= \frac{1}{4} \langle \hat{a}_1^2 + (\hat{a}_1^\dagger)^2 + \hat{a}_1\hat{a}_1^\dagger + \hat{a}_1^\dagger\hat{a}_1 \rangle \\
+&= \frac{1}{4} \left( -2\sinh r \cosh r + \cosh^2 r + \sinh^2 r \right) \\
+&= \frac{1}{4} (\cosh r - \sinh r)^2 = \frac{1}{4}e^{-2r}
+\end{align*}
+\begin{align*}
+\langle\hat{p}_1^2\rangle &= -\frac{1}{4} \langle \hat{a}_1^2 + (\hat{a}_1^\dagger)^2 - \hat{a}_1\hat{a}_1^\dagger - \hat{a}_1^\dagger\hat{a}_1 \rangle \\
+&= -\frac{1}{4} \left( -2\sinh r \cosh r - \cosh^2 r - \sinh^2 r \right) \\
+&= \frac{1}{4} (\cosh r + \sinh r)^2 = \frac{1}{4}e^{2r}
+\end{align*}
+
+\textbf{Evaluating Mode 2 (squeezed by parameter $-r$):}
+Substituting $r \to -r$ into the above results directly flips the exponents:
+\begin{align*}
+\langle\hat{q}_2^2\rangle &= \frac{1}{4}e^{-2(-r)} = \frac{1}{4}e^{2r} \\
+\langle\hat{p}_2^2\rangle &= \frac{1}{4}e^{2(-r)} = \frac{1}{4}e^{-2r}
+\end{align*}
+
+Because the input modes are independent, all cross-correlations between Mode 1 and Mode 2 are zero. The input state $\hat{S}(r)|0\rangle_1 \otimes \hat{S}(-r)|0\rangle_2$ is a product state, making its covariance matrix a block-diagonal tensor sum of the two modes:
+\begin{equation*}
+\sigma_{in} = \frac{1}{4} \begin{pmatrix} e^{-2r} & 0 & 0 & 0 \\ 0 & e^{2r} & 0 & 0 \\ 0 & 0 & e^{2r} & 0 \\ 0 & 0 & 0 & e^{-2r} \end{pmatrix}
+\end{equation*}
+
+\subsubsection{Deriving the Symplectic Beam-Splitter Matrix }
+A standard beam-splitter transforms two input modes ($\hat{a}, \hat{b}$) into output modes ($\hat{c}, \hat{d}$). For a balanced $50{:}50$ beam-splitter ($\eta = 1/2$), the canonical transformations are:
+\begin{align*}
+\hat{c} &= \frac{1}{\sqrt{2}}\hat{a} + \frac{1}{\sqrt{2}}\hat{b} \\
+\hat{d} &= -\frac{1}{\sqrt{2}}\hat{a} + \frac{1}{\sqrt{2}}\hat{b}
+\end{align*}
+
+Because the quadratures $\hat{q}$ and $\hat{p}$ are linear combinations of the mode operators, they inherit this exact same transformation geometry. Mapping the inputs ($\hat{q}_1, \hat{p}_1, \hat{q}_2, \hat{p}_2$) to outputs ($\hat{q}_c, \hat{p}_c, \hat{q}_d, \hat{p}_d$) produces a system of linear equations:
+\begin{align*}
+\hat{q}_c &= \frac{1}{\sqrt{2}}\hat{q}_1 + \frac{1}{\sqrt{2}}\hat{q}_2 \\
+\hat{p}_c &= \frac{1}{\sqrt{2}}\hat{p}_1 + \frac{1}{\sqrt{2}}\hat{p}_2 \\
+\hat{q}_d &= -\frac{1}{\sqrt{2}}\hat{q}_1 + \frac{1}{\sqrt{2}}\hat{q}_2 \\
+\hat{p}_d &= -\frac{1}{\sqrt{2}}\hat{p}_1 + \frac{1}{\sqrt{2}}\hat{p}_2
+\end{align*}
+
+Expressing this linear transformation as a $4 \times 4$ matrix equation $\vec{R}_{out} = B\vec{R}_{in}$ yields the real symplectic matrix $B$:
+\begin{equation*}
+B = \begin{pmatrix} \frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} & 0 \\ 0 & \frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} & 0 \\ 0 & -\frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} \end{pmatrix}
+\end{equation*}
+
+\subsubsection{Deriving the Output EPR Covariance Matrix }
+The final covariance matrix evolves under the symplectic transformation as $\sigma_{EPR} = B \sigma_{in} B^T$. We evaluate this via rigorous matrix multiplication. 
+
+\textbf{Step 3a: Calculate the intermediate matrix $B \sigma_{in}$}
+\begin{align*}
+B \sigma_{in} &= \frac{1}{4} \begin{pmatrix} \frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} & 0 \\ 0 & \frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} & 0 \\ 0 & -\frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} \end{pmatrix} \begin{pmatrix} e^{-2r} & 0 & 0 & 0 \\ 0 & e^{2r} & 0 & 0 \\ 0 & 0 & e^{2r} & 0 \\ 0 & 0 & 0 & e^{-2r} \end{pmatrix} \\
+&= \frac{1}{4} \begin{pmatrix} \frac{e^{-2r}}{\sqrt{2}} & 0 & \frac{e^{2r}}{\sqrt{2}} & 0 \\ 0 & \frac{e^{2r}}{\sqrt{2}} & 0 & \frac{e^{-2r}}{\sqrt{2}} \\ -\frac{e^{-2r}}{\sqrt{2}} & 0 & \frac{e^{2r}}{\sqrt{2}} & 0 \\ 0 & -\frac{e^{2r}}{\sqrt{2}} & 0 & \frac{e^{-2r}}{\sqrt{2}} \end{pmatrix}
+\end{align*}
+
+\textbf{Step 3b: Calculate the final matrix $(B \sigma_{in}) B^T$}
+\begin{equation*}
+(B \sigma_{in}) B^T = \frac{1}{4} \begin{pmatrix} \frac{e^{-2r}}{\sqrt{2}} & 0 & \frac{e^{2r}}{\sqrt{2}} & 0 \\ 0 & \frac{e^{2r}}{\sqrt{2}} & 0 & \frac{e^{-2r}}{\sqrt{2}} \\ -\frac{e^{-2r}}{\sqrt{2}} & 0 & \frac{e^{2r}}{\sqrt{2}} & 0 \\ 0 & -\frac{e^{2r}}{\sqrt{2}} & 0 & \frac{e^{-2r}}{\sqrt{2}} \end{pmatrix} \begin{pmatrix} \frac{1}{\sqrt{2}} & 0 & -\frac{1}{\sqrt{2}} & 0 \\ 0 & \frac{1}{\sqrt{2}} & 0 & -\frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} & 0 \\ 0 & \frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} \end{pmatrix}
+\end{equation*}
+
+We compute the dot products for the active non-zero elements:
+\begin{itemize}
+    \item \textbf{Element (1,1) and (3,3):} $\frac{1}{4} \left( \frac{1}{2}e^{-2r} + \frac{1}{2}e^{2r} \right) = \frac{1}{4}\left( \frac{e^{2r} + e^{-2r}}{2} \right) = \frac{1}{4}\cosh 2r$
+    \item \textbf{Element (2,2) and (4,4):} $\frac{1}{4} \left( \frac{1}{2}e^{2r} + \frac{1}{2}e^{-2r} \right) = \frac{1}{4}\cosh 2r$
+    \item \textbf{Element (1,3) and (3,1):} $\frac{1}{4} \left( -\frac{1}{2}e^{-2r} + \frac{1}{2}e^{2r} \right) = \frac{1}{4}\left( \frac{e^{2r} - e^{-2r}}{2} \right) = \frac{1}{4}\sinh 2r$
+    \item \textbf{Element (2,4) and (4,2):} $\frac{1}{4} \left( -\frac{1}{2}e^{2r} + \frac{1}{2}e^{-2r} \right) = \frac{1}{4}\left( \frac{e^{-2r} - e^{2r}}{2} \right) = -\frac{1}{4}\sinh 2r$
+\end{itemize}
+
+Populating the full array with these evaluated elements yields the exact output covariance matrix:
+\begin{equation}
+\sigma_{EPR} = \frac{1}{4} \begin{pmatrix} \cosh 2r & 0 & \sinh 2r & 0 \\ 0 & \cosh 2r & 0 & -\sinh 2r \\ \sinh 2r & 0 & \cosh 2r & 0 \\ 0 & -\sinh 2r & 0 & \cosh 2r \end{pmatrix}
+\end{equation}
