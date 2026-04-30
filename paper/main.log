@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.26)  30 APR 2026 15:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.26)  30 APR 2026 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1113,24 +1113,24 @@ Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1192,21 +1192,21 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 108.
+Package hyperref Info: Link coloring OFF on input line 111.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 108.
-Package microtype Info: Applying patch `item' on input line 108.
-Package microtype Info: Applying patch `toc' on input line 108.
-Package microtype Info: Applying patch `eqnum' on input line 108.
+LaTeX Info: Redefining \microtypecontext on input line 111.
+Package microtype Info: Applying patch `item' on input line 111.
+Package microtype Info: Applying patch `toc' on input line 111.
+Package microtype Info: Applying patch `eqnum' on input line 111.
 
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 108.
+Package microtype Warning: Unable to apply patch `footnote' on input line 111.
 
-Package microtype Info: Applying patch `verbatim' on input line 108.
-LaTeX Info: Redefining \microtypesetup on input line 108.
+Package microtype Info: Applying patch `verbatim' on input line 111.
+LaTeX Info: Redefining \microtypesetup on input line 111.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1247,9 +1247,9 @@ Package biblatex Warning: Biber reported the following issues
 , falling back to literal.
 
 )
-Package biblatex Info: Reference section=0 on input line 108.
-Package biblatex Info: Reference segment=0 on input line 108.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 127
+Package biblatex Info: Reference section=0 on input line 111.
+Package biblatex Info: Reference segment=0 on input line 111.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 130
 .
  (C:\Users\bikas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1257,7 +1257,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\bikas\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 127
+LaTeX Font Info:    Trying to load font information for U+msb on input line 130
 .
 
 (C:\Users\bikas\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1269,7 +1269,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <figures/logo.png, id=367, 581.17125pt x 663.98062pt>
 File: figures/logo.png Graphic file (type png)
 <use figures/logo.png>
-Package pdftex.def Info: figures/logo.png  used on input line 137.
+Package pdftex.def Info: figures/logo.png  used on input line 140.
 (pdftex.def)             Requested size: 67.94241pt x 77.61754pt.
 
 
@@ -1323,7 +1323,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 ...plitter Matrix }{57}{subsubsection.2.19.2}
+l.85 ...plitter Matrix }{56}{subsubsection.2.19.2}
                                                   % [2])
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -1342,7 +1342,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 \newpage
+l.161 \newpage
                [3] (Introduction.tex
 
 
@@ -1846,6 +1846,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [46]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 574.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 574.
+
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1854,15 +1863,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [47]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 575.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 575.
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1943,7 +1943,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[56]
+[56])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1952,16 +1952,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[57])
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[58] (Normal_Form_Decomposition.tex
+[57] (Normal_Form_Decomposition.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
@@ -1975,7 +1966,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[59]
+[58]
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
@@ -1994,7 +1985,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[60]
+[59]
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
@@ -2018,7 +2009,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[61]
+[60]
 Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
@@ -2032,16 +2023,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[62]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-LaTeX Warning: Reference `eq:eq2961' on page 63 undefined on input line 177.
+LaTeX Warning: Reference `eq:eq2961' on page 62 undefined on input line 177.
 
 
-LaTeX Warning: Reference `eq:eq296b' on page 63 undefined on input line 177.
+LaTeX Warning: Reference `eq:eq296b' on page 62 undefined on input line 177.
 
 
 
@@ -2052,7 +2043,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[63]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
@@ -2066,7 +2057,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[64]) (distinguisability_of_states.tex
+[63]) (distinguisability_of_states.tex
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 4
 .
 
@@ -2076,6 +2067,15 @@ File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
 
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[64]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2111,7 +2111,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[68]
+[68]) (fidelity_for_gaussian.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2120,7 +2120,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[69]) (fidelity_for_gaussian.tex
+[69]) (quantum_chernoff.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2129,7 +2129,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[70]) (quantum_chernoff.tex
+[70]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2138,16 +2138,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[71]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[72]) (example.tex
+[71]) (example.tex
 (C:\Users\bikas\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
@@ -2164,7 +2155,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[73]
+[72]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2173,7 +2164,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[74]
+[73]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
@@ -2187,24 +2178,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[75]
-<figures/Q_vs_s.png, id=1152, 722.7pt x 505.89pt>
+[74]
+<figures/Q_vs_s.png, id=1148, 722.7pt x 505.89pt>
 File: figures/Q_vs_s.png Graphic file (type png)
 <use figures/Q_vs_s.png>
-Package pdftex.def Info: figures/Q_vs_s.png  used on input line 149.
+Package pdftex.def Info: figures/Q_vs_s.png  used on input line 147.
 (pdftex.def)             Requested size: 203.83417pt x 142.6826pt.
-<figures/QCB.png, id=1153, 722.7pt x 505.89pt>
+<figures/QCB.png, id=1149, 722.7pt x 505.89pt>
 File: figures/QCB.png Graphic file (type png)
 <use figures/QCB.png>
-Package pdftex.def Info: figures/QCB.png  used on input line 156.
+Package pdftex.def Info: figures/QCB.png  used on input line 154.
 (pdftex.def)             Requested size: 203.83417pt x 142.6826pt.
-<figures/P_E.png, id=1154, 722.7pt x 505.89pt>
+<figures/P_E.png, id=1150, 722.7pt x 505.89pt>
 File: figures/P_E.png Graphic file (type png)
 <use figures/P_E.png>
-Package pdftex.def Info: figures/P_E.png  used on input line 164.
+Package pdftex.def Info: figures/P_E.png  used on input line 162.
 (pdftex.def)             Requested size: 203.83417pt x 142.6826pt.
 
-Underfull \hbox (badness 1389) in paragraph at lines 165--165
+Underfull \hbox (badness 1389) in paragraph at lines 163--163
 []\OT1/cmr/m/n/12 (+20) Figure 4: |Er-ror Prob-a-bil-ity within
  []
 
@@ -2217,7 +2208,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[76 <./figures/Q_vs_s.png> <./figures/QCB.png> <./figures/P_E.png>]
+[75 <./figures/Q_vs_s.png> <./figures/QCB.png> <./figures/P_E.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2226,7 +2217,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[77] (main.aux)
+[76] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
@@ -2246,9 +2237,9 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 ### simple group (level 1) entered at line 53 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 40972 strings out of 473536
- 793578 string characters out of 5714956
- 1897226 words of memory out of 5000000
+ 40971 strings out of 473536
+ 793838 string characters out of 5714956
+ 1892359 words of memory out of 5000000
  62960 multiletter control sequences out of 15000+600000
  576579 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2279,9 +2270,9 @@ blic/amsfonts/cm/cmtt10.pfb><C:/Users/bikas/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/bikas/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/bikas/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (80 pages, 1390620 bytes).
+Output written on main.pdf (79 pages, 1390251 bytes).
 PDF statistics:
- 1387 PDF objects out of 1440 (max. 8388607)
- 482 named destinations out of 1000 (max. 500000)
+ 1383 PDF objects out of 1440 (max. 8388607)
+ 481 named destinations out of 1000 (max. 500000)
  39158 words of extra memory for PDF output out of 42996 (max. 10000000)
 

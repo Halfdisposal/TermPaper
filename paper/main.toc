@@ -28,20 +28,20 @@
 \contentsline {subsubsection}{\numberline {2.5.2}The Symplectic Group}{24}{subsubsection.2.5.2}%
 \contentsline {subsubsection}{\numberline {2.5.3}Real Canonical Linear Transformations}{25}{subsubsection.2.5.3}%
 \contentsline {subsection}{\numberline {2.6}Quadratic Hamiltonians and Gaussian Transformations}{25}{subsection.2.6}%
-\contentsline {paragraph}{Heisenberg Evolution:}{26}{equation.62}%
-\contentsline {paragraph}{Symplectic Nature of $S(t)$:}{27}{equation.67}%
-\contentsline {paragraph}{Transformation of Mean and Covariance Matrix:}{27}{equation.69}%
+\contentsline {paragraph}{Heisenberg Evolution:}{26}{equation.2.25}%
+\contentsline {paragraph}{Symplectic Nature of $S(t)$:}{27}{equation.2.30}%
+\contentsline {paragraph}{Transformation of Mean and Covariance Matrix:}{27}{equation.2.32}%
 \contentsline {subsection}{\numberline {2.7}Characteristic Functions (Quantum)}{29}{subsection.2.7}%
 \contentsline {subsection}{\numberline {2.8}Wigner Function}{29}{subsection.2.8}%
-\contentsline {paragraph}{Characteristic Function Representation:}{29}{equation.84}%
-\contentsline {paragraph}{Properties:}{30}{equation.86}%
-\contentsline {paragraph}{Expectation Values:}{30}{equation.86}%
+\contentsline {paragraph}{Characteristic Function Representation:}{29}{equation.2.47}%
+\contentsline {paragraph}{Properties:}{30}{equation.2.49}%
+\contentsline {paragraph}{Expectation Values:}{30}{equation.2.49}%
 \contentsline {subsection}{\numberline {2.9}P Representation}{30}{subsection.2.9}%
-\contentsline {paragraph}{Properties:}{30}{equation.88}%
+\contentsline {paragraph}{Properties:}{30}{equation.2.51}%
 \contentsline {subsection}{\numberline {2.10}Trace Rules in Phase Space}{31}{subsection.2.10}%
 \contentsline {paragraph}{Glauber Expansion:}{31}{subsection.2.10}%
-\contentsline {paragraph}{Trace Rule (Characteristic Functions):}{31}{equation.90}%
-\contentsline {paragraph}{Trace Rule (Wigner Functions):}{31}{equation.91}%
+\contentsline {paragraph}{Trace Rule (Characteristic Functions):}{31}{equation.2.53}%
+\contentsline {paragraph}{Trace Rule (Wigner Functions):}{31}{equation.2.54}%
 \contentsline {subsection}{\numberline {2.11}Uncertainty Principle}{31}{subsection.2.11}%
 \contentsline {subsection}{\numberline {2.12}Coherent States}{32}{subsection.2.12}%
 \contentsline {subsubsection}{\numberline {2.12.1}Fock representation of the coherent state}{32}{subsubsection.2.12.1}%
@@ -65,36 +65,36 @@
 \contentsline {subsubsection}{\numberline {2.15.4}Determining the Normalization Scalar}{46}{subsubsection.2.15.4}%
 \contentsline {subsubsection}{\numberline {2.15.5}Final Assembly}{46}{subsubsection.2.15.5}%
 \contentsline {subsubsection}{\numberline {2.15.6}Squeezed state form}{47}{subsubsection.2.15.6}%
-\contentsline {subsection}{\numberline {2.16}Derivation of the Wigner Function for the Squeezed Vacuum State}{48}{subsection.2.16}%
-\contentsline {subsubsection}{\numberline {2.16.1}The Annihilation Condition}{48}{subsubsection.2.16.1}%
+\contentsline {subsection}{\numberline {2.16}Derivation of the Wigner Function for the Squeezed Vacuum State}{47}{subsection.2.16}%
+\contentsline {subsubsection}{\numberline {2.16.1}The Annihilation Condition}{47}{subsubsection.2.16.1}%
 \contentsline {subsubsection}{\numberline {2.16.2}Formulating $\hat {b}$ in Phase Space}{48}{subsubsection.2.16.2}%
-\contentsline {subsubsection}{\numberline {2.16.3}Solving the Position Wavefunction}{49}{subsubsection.2.16.3}%
+\contentsline {subsubsection}{\numberline {2.16.3}Solving the Position Wavefunction}{48}{subsubsection.2.16.3}%
 \contentsline {subsubsection}{\numberline {2.16.4}Integrating the Wigner Function}{49}{subsubsection.2.16.4}%
-\contentsline {subsection}{\numberline {2.17}Algebraic Derivation of Two-Mode Squeezing}{51}{subsection.2.17}%
-\contentsline {subsubsection}{\numberline {2.17.1}Definitions}{51}{subsubsection.2.17.1}%
-\contentsline {subsubsection}{\numberline {2.17.2}Mode Evolution}{51}{subsubsection.2.17.2}%
-\contentsline {subsubsection}{\numberline {2.17.3}Normal-Ordered Ladder Expansion}{52}{subsubsection.2.17.3}%
-\contentsline {subsubsection}{\numberline {2.17.4}Sidenote :}{53}{subsubsection.2.17.4}%
-\contentsline {subsection}{\numberline {2.18}Creating Gaussian EPR states}{54}{subsection.2.18}%
-\contentsline {subsubsection}{\numberline {2.18.1}Preliminary Properties for Usage}{54}{subsubsection.2.18.1}%
-\contentsline {subsubsection}{\numberline {2.18.2}The First Moments (Means)}{54}{subsubsection.2.18.2}%
-\contentsline {subsubsection}{\numberline {2.18.3}The Photon Number}{54}{subsubsection.2.18.3}%
-\contentsline {subsubsection}{\numberline {2.18.4}The Variance / Squeezing Terms}{55}{subsubsection.2.18.4}%
-\contentsline {subsection}{\numberline {2.19}Explicit Derivation of the Matrices for the Gaussian EPR State}{56}{subsection.2.19}%
-\contentsline {subsubsection}{\numberline {2.19.1}Deriving the Input Covariance Matrix }{56}{subsubsection.2.19.1}%
-\contentsline {subsubsection}{\numberline {2.19.2}Deriving the Symplectic Beam-Splitter Matrix }{57}{subsubsection.2.19.2}%
-\contentsline {subsubsection}{\numberline {2.19.3}Deriving the Output EPR Covariance Matrix }{57}{subsubsection.2.19.3}%
-\contentsline {section}{\numberline {3}State Discrimination Using Gaussian States}{59}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Introduction}{59}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Normal form decomposition}{60}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Distinguisability Of States}{65}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Helstrom’s Optimal Discrimination}{65}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Fidelity}{68}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Quantum Chernoff Bounds}{68}{subsubsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.4}Fidelity for Gaussian States}{71}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Single Mode Gaussian States}{71}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Multimode Gaussian States}{71}{subsubsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.5}Quantum Chernoff Bounds for Gaussian States}{71}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Numerical Analysis of Quantum Chernoff Bounds}{73}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Results}{76}{subsubsection.3.5.2}%
-\contentsline {section}{References}{77}{figure.caption.4}%
+\contentsline {subsection}{\numberline {2.17}Algebraic Derivation of Two-Mode Squeezing}{50}{subsection.2.17}%
+\contentsline {subsubsection}{\numberline {2.17.1}Definitions}{50}{subsubsection.2.17.1}%
+\contentsline {subsubsection}{\numberline {2.17.2}Mode Evolution}{50}{subsubsection.2.17.2}%
+\contentsline {subsubsection}{\numberline {2.17.3}Normal-Ordered Ladder Expansion}{51}{subsubsection.2.17.3}%
+\contentsline {subsubsection}{\numberline {2.17.4}Sidenote :}{52}{subsubsection.2.17.4}%
+\contentsline {subsection}{\numberline {2.18}Creating Gaussian EPR states}{52}{subsection.2.18}%
+\contentsline {subsubsection}{\numberline {2.18.1}Preliminary Properties for Usage}{52}{subsubsection.2.18.1}%
+\contentsline {subsubsection}{\numberline {2.18.2}The First Moments (Means)}{53}{subsubsection.2.18.2}%
+\contentsline {subsubsection}{\numberline {2.18.3}The Photon Number}{53}{subsubsection.2.18.3}%
+\contentsline {subsubsection}{\numberline {2.18.4}The Variance / Squeezing Terms}{54}{subsubsection.2.18.4}%
+\contentsline {subsection}{\numberline {2.19}Explicit Derivation of the Matrices for the Gaussian EPR State}{54}{subsection.2.19}%
+\contentsline {subsubsection}{\numberline {2.19.1}Deriving the Input Covariance Matrix }{55}{subsubsection.2.19.1}%
+\contentsline {subsubsection}{\numberline {2.19.2}Deriving the Symplectic Beam-Splitter Matrix }{56}{subsubsection.2.19.2}%
+\contentsline {subsubsection}{\numberline {2.19.3}Deriving the Output EPR Covariance Matrix }{56}{subsubsection.2.19.3}%
+\contentsline {section}{\numberline {3}State Discrimination Using Gaussian States}{58}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Introduction}{58}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Normal form decomposition}{59}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Distinguisability Of States}{64}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Helstrom’s Optimal Discrimination}{64}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Fidelity}{67}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Quantum Chernoff Bounds}{67}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}Fidelity for Gaussian States}{70}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Single Mode Gaussian States}{70}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Multimode Gaussian States}{70}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}Quantum Chernoff Bounds for Gaussian States}{70}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Numerical Analysis of Quantum Chernoff Bounds}{72}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Results}{75}{subsubsection.3.5.2}%
+\contentsline {section}{References}{76}{figure.caption.4}%

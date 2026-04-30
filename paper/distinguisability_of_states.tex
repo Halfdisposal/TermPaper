@@ -108,7 +108,7 @@ Then, \cite{pbcourse_chernoff}
 For the optimal decision, we define the log likelihood,
 $$L(x) = log\frac{p_1(x)}{p_0(x)}$$
 For N trial observations $$X = \sum_{i=1}^N L(x_i) = \sum_{i=1}^N log\frac{p_1(x_i)}{p_0(x_i)}$$
-where we declare $H_1$ is true if X > 0 else we declare $H_0$ is true.
+where we declare $H_1$ is true if $X > 0$ else we declare $H_0$ is true.
 Now we refer to the eq~\ref{eq:311a}, which using above under hypothesis $H_1$
 $$P(H_0 | H_1) = P(X \le 0 | H_1) \le e^{-s \cdot 0} M_X(s) = M_X(s)$$
 where $s < 0$
@@ -157,7 +157,7 @@ Also, defining $Q_s = tr(\hat{\rho}_0^s \hat{\rho}_1^{1-s})$ and $Q = \text{min}
 \end{equation}
 The aim to find the minimum error would require the minimization of $Q_s$ over all valures of $s \in [0, 1]$. Setting s = $\frac{1}{2}$, we will arrive at the \textit{Quantum Bhattacharyya Bound}, however this bound is not assymptotically tight as the Quantum Chernoff Bound.
 \begin{equation}
-    P_{B}^N = \frac{1}{2}\left(tr(\sqrt(\hat{\rho}_0 \hat{\rho}_1))\right)^N
+    P_{B}^N = \frac{1}{2}\left(tr(\sqrt{\hat{\rho}_0 \hat{\rho}_1})\right)^N
 \end{equation}
 If the two states are indistinguisable, i.e. $\hat{\rho}_0 = \hat{\rho}_1$, then $P_{QC}^N \approx P_B^N$ and 
 \begin{equation}
@@ -165,7 +165,7 @@ If the two states are indistinguisable, i.e. $\hat{\rho}_0 = \hat{\rho}_1$, then
 \label{eq:ineq}
 \end{equation}
 Also, it is noted that $Q_s$ is a convex function over s and joint-concave over $\hat{\rho}_0$ and $\hat{]rho}_1$. 
-$Q_s$ can be written as $$Q_s = tr(\hat{\rho}_0^s \hat{]rho}_1^{1 - s}) = \sum_k e_k^{(0)^s} e_k^{(1)^{1 - s}}$$
+$Q_s$ can be written as $$Q_s = tr(\hat{\rho}_0^s \hat{\rho}_1^{1 - s}) = \sum_k e_k^{(0)^s} e_k^{(1)^{1 - s}}$$
 where $e_k^{(0)}$ and $e_k^{(1)} \ge 0$
 Thus each element of $Q_s$ is $f_k(s) = a_k^s b_k^{1 - s} = e^{s ln{a_k}} e^{(1 - s) ln{b_k}}$, taking the 2nd derivative of $f_k$ w.r.t. s, we see $f_k^{''}(s) = (ln a_k - ln b_k)^s \cdot f_k(s) \ge 0$. Hence $Q_s$ is convex over s. 
 Also using Lieb's Theorem \cite{libstheorem}

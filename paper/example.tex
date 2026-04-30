@@ -1,5 +1,5 @@
 \subsubsection{Numerical Analysis of Quantum Chernoff Bounds}
-Below is a numerical implimentation for the validation of the Helstrom Bounds over the limit of N.
+Below is a numerical implimentation for the validation of the Helstrom Bounds over the limit of N. The limit of N taken here is to be N = 10.
 
 \begin{lstlisting}[style=pythonstyle, caption={Includes}]
 import numpy as np
@@ -8,7 +8,12 @@ from scipy.optimize import minimize_scalar
 from qutip import rand_dm, ket2dm, tensor
 \end{lstlisting}
 
-
+\begin{lstlisting}[style=pythonstyle, caption={Defining the two state with random density matrix}]
+rho0 = rand_dm(2, seed=809)
+rho1 = rand_dm(2, seed=593)
+print(rho0)
+print(rho1)
+\end{lstlisting}
 Defining the two random density matrices 
 $$
 \hat{\rho}_0 = \begin{pmatrix}
@@ -22,13 +27,6 @@ $$
 0.1045 - 0.2534i & 0.5786
 \end{pmatrix}
 $$
-\begin{lstlisting}[style=pythonstyle, caption={Defining the two state with random density matrix}]
-rho0 = rand_dm(2, seed=809)
-rho1 = rand_dm(2, seed=593)
-print(rho0)
-print(rho1)
-\end{lstlisting}
-
 
 \begin{lstlisting}[style=pythonstyle, caption={Defining a function to calculate the matrix power of rho}]
 def mat_power(rho, t):
@@ -60,8 +58,8 @@ print(f"s*={s_opt:.4f}  Q={Q:.6f}  Q_half={Q_half:.6f}  xi={xi:.6f}")
 
 \begin{lstlisting}[style=pythonstyle, caption={Defining a function to return the N trails accumulated helstrom bounds}]
 def helstrom_N(r0, r1, N):
-    r0N   = tensor([r0]*N)
-    r1N   = tensor([r1]*N)
+    r0N = tensor([r0]*N)
+    r1N = tensor([r1]*N)
     Gamma = r1N - r0N
     evals = Gamma.eigenenergies()
     del r0N, r1N, Gamma
@@ -70,7 +68,7 @@ def helstrom_N(r0, r1, N):
 
 
 \begin{lstlisting}[style=pythonstyle, caption={Computing the helstrom bounds}]
-N_max  = 10
+N_max = 10
 N_vals = np.arange(1, N_max+1)
 print("Computing Helstrom...")
 PE_exact = np.array([helstrom_N(rho0, rho1, N) for N in N_vals])
@@ -79,11 +77,11 @@ print("Done:", PE_exact)
 
 
 \begin{lstlisting}[style=pythonstyle, caption={Calculating the probabilities of error}]
-PE_QCB   = 0.5 * Q**N_vals
-PE_bhat  = 0.5 * Q_half**N_vals
+PE_QCB = 0.5 * Q**N_vals
+PE_bhat = 0.5 * Q_half**N_vals
 log_exact = np.log(np.maximum(PE_exact,1e-15)) / N_vals
-log_QCB   = np.log(PE_QCB)  / N_vals
-log_bhat  = np.log(PE_bhat) / N_vals
+log_QCB = np.log(PE_QCB)  / N_vals
+log_bhat = np.log(PE_bhat) / N_vals
 \end{lstlisting}
 
 
@@ -92,13 +90,13 @@ theta_vals = np.linspace(0,1,40)
 pe_h, pe_q, pe_b, pe_f = [],[],[],[]
 for th in theta_vals:
     r1t = th*rho1 + (1-th)*rho0
-    ev  = (r1t-rho0).eigenenergies()
+    ev = (r1t-rho0).eigenenergies()
     pe_h.append(0.5*(1-0.5*np.sum(np.abs(ev))))
     res2 = minimize_scalar(lambda s,r=r1t: Qs(rho0,r,s),bounds=(0.01,0.99),method='bounded')
     pe_q.append(0.5*res2.fun)
     pe_b.append(0.5*Qs(rho0,r1t,0.5))
     r0h = mat_power(rho0,0.5)
-    F   = float(np.real(((r0h*r1t*r0h).sqrtm()).tr()))
+    F = float(np.real(((r0h*r1t*r0h).sqrtm()).tr()))
     pe_f.append((1-np.clip(F,0,1))/2)
 \end{lstlisting}
 
