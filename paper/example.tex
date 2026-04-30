@@ -166,5 +166,5 @@ plt.show()
         \label{fig:33}
     \end{minipage}
 \end{figure}
-\textbf{Interpretation}
+\textbf{Interpretation}\\
 fig~\ref{fig:31} clearly shows the convex nature of $Q_s$ over s for $s \in [0, 1]$, with a unique minima at near $s \approx 0.47$. This visually confirms the theoretical results discussed before. Moreover, as minimum of s is close to $\frac{1}{2}$, we can see in fig~\ref{fig:32}, that the Quantum Chernoff Bounds and the Bhattacharyya bounds are close, but since it is not exactly 0.5, so the Quantum Chernoff Bound converges faster. Moreover, fig~\ref{fig:32} also shows the asymptotic nature limit of the bounds $-\kappa = ln(Q)$ as N becomes large, confirming the exponential decay of the error probability $P_E = e^{-\kappa N}$. Also, the Helstrom Bound lies below the chernoff bounds as predicted by the equation $P_{E, N}^{min} \le \frac{1}{2}Q^N$. In fig~\ref{fig:33}, as $\theta$ varies from 0 to 1, the state $\hat{\rho}_1(\theta) = \theta \hat{\rho}_1 + (1 - \theta) \hat{\rho}_0$, interpolates between the two states. At $\theta = 0$, both hypothesis are identical and is seen in the plot as 0.5, with maximum error. As $\theta$ increases, the states becomes more distinct and the error probability starts decreasing. Moreover, it also follows the ordering eq~\ref{eq:ineq}

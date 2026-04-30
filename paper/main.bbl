@@ -199,6 +199,40 @@
       \verb 10.1103/PhysRevA.49.1567
       \endverb
     \endentry
+    \entry{MandelWolf1995}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=dc6966f2c95f08c3017246a5e4de7957}{%
+           family={Mandel},
+           familyi={M\bibinitperiod},
+           given={Leonard},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4f3da79454ab0edb86f37a6038d1998f}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \strng{fullhash}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \strng{fullhashraw}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \strng{bibnamehash}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \strng{authorbibnamehash}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \strng{authornamehash}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \strng{authorfullhash}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \strng{authorfullhashraw}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Optical Coherence and Quantum Optics}
+      \field{year}{1995}
+    \endentry
     \entry{chernoffref}{article}{}{}
       \name{author}{2}{}{%
         {{hash=9eb07060d8638c20478c4ed4f33d6cfc}{%
@@ -220,8 +254,8 @@
       \strng{authornamehash}{8ff3b3e156bdf89d932ad8bf51529c93}
       \strng{authorfullhash}{8ff3b3e156bdf89d932ad8bf51529c93}
       \strng{authorfullhashraw}{8ff3b3e156bdf89d932ad8bf51529c93}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett. 98, 160501 (2007)}
@@ -244,8 +278,8 @@
       \strng{authornamehash}{33c512a801f6604a8ccf9e8a4570a45e}
       \strng{authorfullhash}{33c512a801f6604a8ccf9e8a4570a45e}
       \strng{authorfullhashraw}{33c512a801f6604a8ccf9e8a4570a45e}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Introduction to Probability, Statistics, and Random Processes: Chernoff Bounds}
@@ -272,8 +306,8 @@
       \strng{authornamehash}{60e4e139faf65b09dc50a8f686c6742c}
       \strng{authorfullhash}{60e4e139faf65b09dc50a8f686c6742c}
       \strng{authorfullhashraw}{60e4e139faf65b09dc50a8f686c6742c}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv:1512.03401v3}
