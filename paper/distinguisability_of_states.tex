@@ -53,7 +53,8 @@ Hence,
                                   &= \sum_{k} e_{kk} \mu_k
     \end{split}
 \end{equation}
-Since POVMs are positive valued, so $e_{kk}$ is positive. Now, $\mu_k$ can be positive or negative, but since we are optimizing $e_{kk}$, if $\mu_k$ is negative, it will lead to negative propagation of the errors, thus for such cases $e_{kk}$ must be 0. Hence the net contribution will come only from the positive $e_{kk}$ values. Thus the optimal $\hat{E}_1$ is one that projects onto positive part of $\hat{\gamma}$, $\hat{\gamma}_+$ (say) which projects to the subspace by the eigenstates of $\hat{\gamma}$ with positive eigenvalues. 
+Since POVMs are positive valued, so $e_{kk}$ is positive. Note that $e_{kk} \ge 0$, as $\hat{E}_1$ is a positive operator, so the deviation towards the minimum will depend on the sign of $\mu_k$. Now, for minimizing the error, we need to maximize the quantity $\sum_{k} e_{kk} \mu_k$. Since, negative values of $\mu_k$ will lead to decrease in this quantity, so we set the values of $e_{kk} = 0$for negative values of $\mu_k$.
+Hence the net contribution will come only from the positive $e_{kk}$ values. Thus the optimal $\hat{E}_1$ is one that projects onto positive part of $\hat{\gamma}$, $\hat{\gamma}_+$ (say) which projects to the subspace by the eigenstates of $\hat{\gamma}$ with positive eigenvalues. 
 Thus, we have $tr(\hat{\gamma} \hat{E}_1) = tr(\hat{\gamma}_+) = \frac{1}{2}||\hat{\gamma}||_1$ where $||\hat{\gamma}||_1 = tr(|\hat{\gamma}|) = tr(\sqrt{\gamma^{\dag}\gamma})$. Thus, using this, eq~\ref{eq:311d} can be written as 
 \begin{equation}
     P_E^{min} = \frac{1}{2}(1 - ||\hat{\rho}_1 - \hat{\rho}_0||_1)
