@@ -72,8 +72,8 @@
       \strng{authornamehash}{654783f89ac55ea27b38a1720b44b6d6}
       \strng{authorfullhash}{654783f89ac55ea27b38a1720b44b6d6}
       \strng{authorfullhashraw}{654783f89ac55ea27b38a1720b44b6d6}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Reviews of Modern Physics}
@@ -136,8 +136,8 @@
       \strng{authornamehash}{1a54ac73d113f73505ba41d6785d0b6e}
       \strng{authorfullhash}{5f43dd814cde0081d913501f87b499c5}
       \strng{authorfullhashraw}{5f43dd814cde0081d913501f87b499c5}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -184,8 +184,8 @@
       \strng{authornamehash}{dda30363121f6de6302d7dd7b64b096b}
       \strng{authorfullhash}{dda30363121f6de6302d7dd7b64b096b}
       \strng{authorfullhashraw}{dda30363121f6de6302d7dd7b64b096b}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review A}
@@ -226,8 +226,8 @@
       \strng{authornamehash}{8de37a2b95c6de5877b00fe3ea99a1cf}
       \strng{authorfullhash}{8de37a2b95c6de5877b00fe3ea99a1cf}
       \strng{authorfullhashraw}{8de37a2b95c6de5877b00fe3ea99a1cf}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Optical Coherence and Quantum Optics}
@@ -254,8 +254,8 @@
       \strng{authornamehash}{8ff3b3e156bdf89d932ad8bf51529c93}
       \strng{authorfullhash}{8ff3b3e156bdf89d932ad8bf51529c93}
       \strng{authorfullhashraw}{8ff3b3e156bdf89d932ad8bf51529c93}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Phys. Rev. Lett. 98, 160501 (2007)}

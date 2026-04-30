@@ -1,18 +1,18 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[262] biber-MSWIN64:340> INFO - === 
-[371] Biber.pm:420> INFO - Reading 'main.bcf'
-[525] Biber.pm:994> INFO - Found 10 citekeys in bib section 0
-[546] Biber.pm:4463> INFO - Processing section 0
-[578] Biber.pm:4654> INFO - Looking for bibtex file 'ref.bib' for section 0
-[643] bibtex.pm:1713> INFO - LaTeX decoding ...
-[668] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
-[799] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[800] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[800] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[800] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[854] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[862] bbl.pm:779> INFO - Output to main.bbl
-[863] Biber.pm:131> WARN - Range field 'pages' in entry 'mainref' is malformed, falling back to literal
-[863] Biber.pm:131> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[863] Biber.pm:133> INFO - WARNINGS: 2
+[118] biber-MSWIN64:340> INFO - === 
+[158] Biber.pm:420> INFO - Reading 'main.bcf'
+[280] Biber.pm:994> INFO - Found 10 citekeys in bib section 0
+[297] Biber.pm:4463> INFO - Processing section 0
+[310] Biber.pm:4654> INFO - Looking for bibtex file 'ref.bib' for section 0
+[356] bibtex.pm:1713> INFO - LaTeX decoding ...
+[370] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[460] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[461] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[461] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[461] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[473] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[479] bbl.pm:779> INFO - Output to main.bbl
+[480] Biber.pm:131> WARN - Range field 'pages' in entry 'mainref' is malformed, falling back to literal
+[480] Biber.pm:131> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[480] Biber.pm:133> INFO - WARNINGS: 2

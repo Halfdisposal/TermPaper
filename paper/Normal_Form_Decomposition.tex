@@ -147,7 +147,7 @@ with $S \in Sp(2n, \mathbb{R})$ and $W$ diagonal as required. This completes the
 
 The elements $d_k$ of the matrix $W$ are called the symplectic eigenvalues and can be calculated from the spectrum of $i\Omega\sigma$, while the matrix $S$ is the symplectic matrix that performs the symplectic decomposition. Finding the symplectic eigenvalues of a covariance matrix is usually straightforward, but determining the symplectic matrix that performs the decomposition is often difficult. Performing the symplectic decomposition of Gaussian states is a key part of the process of determining the distinguishability of those states. For example, it turns out that in order to calculate the quantum Chernoff bound for Gaussian states -- an asymptotic distinguishability measure for states that will be used extensively -- we must find the symplectic decomposition of the states involved.\\
 
-The phenomenological statement implied by equation (\ref{eq:nfd1}) is that every Gaussian state $\hat{\rho}_G$ can be obtained from a thermal state $\hat{\rho}_{\text{th}}$ (described by a diagonal covariance matrix as in equation (2.96)) by performing the unitary transformation $U_S$ associated with the symplectic matrix $S$ that performs the symplectic decomposition:
+The phenomenological statement implied by equation (\ref{eq:nfd1}) is that every Gaussian state $\hat{\rho}_G$ can be obtained from a thermal state $\hat{\rho}_{\text{th}}$ (described by a diagonal covariance matrix as in equation (\ref{eq:eq296b})) by performing the unitary transformation $U_S$ associated with the symplectic matrix $S$ that performs the symplectic decomposition:
 
 \begin{equation}
     \hat{\rho}_G = U_S \hat{\rho}_{\text{th}} U_S^\dagger
@@ -174,7 +174,7 @@ where:
     \end{equation}
 \end{itemize}
 
-For a single-mode thermal state $\hat{\rho}_{\text{th},k}$ with average photon number $N_k$, the covariance matrix is (from equation \ref{eq:eq2961} and \ref{eq:eq296b}):
+For a single-mode thermal state $\hat{\rho}_{\text{th},k}$ with average photon number $N_k$, the covariance matrix is (from equation \ref{eq:eq296a} and \ref{eq:eq296b}):
 
 \begin{equation}
     \sigma_{\text{th},k} = \frac{1}{4} \begin{pmatrix} 2N_k + 1 & 0 \\ 0 & 2N_k + 1 \end{pmatrix} = \left(N_k + \frac{1}{2}\right) \mathbb{I}_2

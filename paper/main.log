@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.26)  30 APR 2026 15:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.26)  30 APR 2026 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2029,12 +2029,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
  []
 
 
-LaTeX Warning: Reference `eq:eq2961' on page 62 undefined on input line 177.
-
-
-LaTeX Warning: Reference `eq:eq296b' on page 62 undefined on input line 177.
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2179,17 +2173,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [74]
-<figures/Q_vs_s.png, id=1148, 722.7pt x 505.89pt>
+<figures/Q_vs_s.png, id=1151, 722.7pt x 505.89pt>
 File: figures/Q_vs_s.png Graphic file (type png)
 <use figures/Q_vs_s.png>
 Package pdftex.def Info: figures/Q_vs_s.png  used on input line 147.
 (pdftex.def)             Requested size: 203.83417pt x 142.6826pt.
-<figures/QCB.png, id=1149, 722.7pt x 505.89pt>
+<figures/QCB.png, id=1152, 722.7pt x 505.89pt>
 File: figures/QCB.png Graphic file (type png)
 <use figures/QCB.png>
 Package pdftex.def Info: figures/QCB.png  used on input line 154.
 (pdftex.def)             Requested size: 203.83417pt x 142.6826pt.
-<figures/P_E.png, id=1150, 722.7pt x 505.89pt>
+<figures/P_E.png, id=1153, 722.7pt x 505.89pt>
 File: figures/P_E.png Graphic file (type png)
 <use figures/P_E.png>
 Package pdftex.def Info: figures/P_E.png  used on input line 162.
@@ -2222,10 +2216,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E6F6DC36D5312DB069F8B0B729FCA5B7;20541.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2237,13 +2227,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 ### simple group (level 1) entered at line 53 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 40971 strings out of 473536
- 793838 string characters out of 5714956
+ 40969 strings out of 473536
+ 793820 string characters out of 5714956
  1892359 words of memory out of 5000000
- 62960 multiletter control sequences out of 15000+600000
+ 62958 multiletter control sequences out of 15000+600000
  576579 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,18n,101p,1370b,2395s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,18n,101p,1370b,2393s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\bikas\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
 ec/dpi600\tctt1000.pk> <C:\Users\bikas\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
 appen/ec/dpi600\tcrm1200.pk><C:/Users/bikas/AppData/Local/Programs/MiKTeX/fonts
@@ -2270,9 +2260,9 @@ blic/amsfonts/cm/cmtt10.pfb><C:/Users/bikas/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/bikas/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/bikas/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (79 pages, 1390251 bytes).
+Output written on main.pdf (79 pages, 1390621 bytes).
 PDF statistics:
- 1383 PDF objects out of 1440 (max. 8388607)
+ 1386 PDF objects out of 1440 (max. 8388607)
  481 named destinations out of 1000 (max. 500000)
  39158 words of extra memory for PDF output out of 42996 (max. 10000000)
 
